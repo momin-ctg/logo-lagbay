@@ -78,7 +78,7 @@ window.lavaAnimation = function () {
         var n = function () {
             requestAnimationFrame(n), o.clearRect(0, 0, a.width, a.height), t.renderMetaballs()
         }, a = i.screen.init("lamp-anim", null, !0), o = a.ctx;
-        a.resize(), t = new e(a.width, a.height, 6, "red","yellow")
+        a.resize(), t = new e(a.width, a.height, 6, "#5a0b97","#09106e")
     }
     return {run: n}
 }();
