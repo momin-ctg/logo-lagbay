@@ -168,6 +168,11 @@ App.Loader = function(loader) {
     };
 };
 
+/**
+ * JavaScript Lamp Animation
+ * Lava Animation Trigger
+ */
+
 App.loader = new App.Loader('.loader');
 App.loader.start();
 if (App.device.wide) {

@@ -461,6 +461,8 @@ svg:not(:root) {
     font-size: 15px;
     transition: .35s ease; }
 
+
+
 .lamp-anim {
     z-index: 1;
     position: fixed;
@@ -1567,7 +1569,6 @@ h1.underline, h2.underline {
 .gmBoxContact .gmBoxContactInn {
     position: absolute;
     top: 0;
-    height: 0;
     width: 100%;
     height: 100%; }
 
