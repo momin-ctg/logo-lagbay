@@ -1,34 +1,255 @@
 <!DOCTYPE html>
-<!--
-======================================
-   _____   ______        _        _
-  /   __| /  ___  \     /      /   \
- |  /    /  /   \  |   /      /     \
- |  \___/  /\___/  |   \     /      /
-  \_______/\______/     \_  /     _/
-======================================
-
--->
 <html>
 <head>
-    <title>Logo Lagbay</title>
+    <title>Logo Lagbey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/scss/bootstrap.css"/>
+    <link rel="stylesheet" href="css/scss/bootstrap-grid.css"/>
+    <link rel="stylesheet" href="css/scss/bootstrap-reboot.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <script src="js/modernizr-custom.js"></script>
 </head>
 
 <body>
 
-<!-- ===================================
-             Home Page Banner Area
-     =================================== -->
-<div class="header" style="background: #0c1476;  /* fallback for old browsers */
-background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(135deg, #0c1476, #680fac 60%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-">
+<!--lamp and lava Animation by jquery-->
+<!--<canvas id="lamp-anim" class="lamp-anim"></canvas>-->
+<!--End lamp and lava Animation by jquery-->
 
-<canvas id="lamp-anim" class="lamp-anim"></canvas>
+<!-- ===================================
+             Main Navigation Area
+     =================================== -->
+<div class="header">
+
+    <div class="nav-area">
+        <div class="logo">
+            <a href="">
+                Logo Lagbey
+            </a>
+        </div>
+        <div class="center-nav">
+            <a href="">Logos</a>
+            <a href="">How It works</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="right-nav">
+            <a href=""><img src="images/search.svg" alt=""></a>
+            <a href=""><img src="images/cart.svg" alt=""></a>
+            <a href="">Login/ Sign Up</a>
+            <a href="">Submit logo</a>
+        </div>
+    </div>
+
+    <!--home page header text-->
+    <div class="header-text text-center">
+        <h2 class="h2">Lorem Ipsum Dolor Sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ipsam, libero maxime perspiciatis rem
+            voluptatum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, saepe.</p>
+
+        <a href="">
+            <span>How It Works</span>
+            <span></span>
+        </a>
+
+    </div>
+    <!--End home page header text-->
 
 </div>
+
+<!--End Main Navigation Area-->
+
+
+<!-- ===================================
+       Logo category text, dropdown
+       button and logo thumbnail
+     =================================== -->
+<div class="logothumbnail-area">
+    <div class="container">
+
+        <div class="ll-button-text text-center">
+            <h2>Check thousand of logo ideas</h2>
+            <select name="ll-industry" id="ll-industry">
+                <option value="">Corporate</option>
+                <option value="">Business</option>
+                <option value="">Manufacturing</option>
+                <option value="">Identity</option>
+                <option value=""></option>
+            </select>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="logo-thumb">
+                    <img src="" alt="">
+                    <div class="logo-caption">
+                        <div class="ll-category">Business</div>
+                        <div class="ll-price"><span>1000BDT</span>5000BDT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Start View All logo link-->
+        <div class="viewall-logo text-center">
+            <a href="">VIEW ALL</a>
+        </div>
+        <!--End All View All logo link-->
+    </div>
+</div>
+<!--End Logo category text, dropdown and logo thumbnail-->
+
+<div class="buysell-logos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="ll-buylogos">
+                    <h2>Buy logos</h2>
+
+                    <div class="buy-logoimage">
+                        <img src="" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ll-selllogos">
+                    <h2>Sell Logos</h2>
+                    .sell
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===================================
+              Main Footer Area
+     =================================== -->
+
+<div class="mainfooter-area">
+    <div class="container-fluid">
+        <div class="row mx-5">
+
+            <div class="col-md-3">
+                <div class="ll-footer-about">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aperiam blanditiis
+                        doloribus eos est excepturi fuga modi quas, quia recusandae repudiandae sequi soluta
+                        tenetur!</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="ll-footer-ourcompany">
+                    <h2>Our Company</h2>
+                    <a href="">How to join us</a>
+                    <a href="">How it work</a>
+                    <a href="">Buying and Selling</a>
+                    <a href="">Testimonial</a>
+                    <a href="">Copyright Notice</a>
+                    <a href="">Refund Policy</a>
+                    <a href="">Affiliates</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="ll-footer-faq">
+                    <h2>Help and Faq</h2>
+                    <a href="">How to join us</a>
+                    <a href="">How it work</a>
+                    <a href="">Buying and Selling</a>
+                    <a href="">Testimonial</a>
+                    <a href="">Copyright Notice</a>
+                    <a href="">Refund Policy</a>
+                    <a href="">Affiliates</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2>Subscribe</h2>
+                <div class="ll-footer-newsletter">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tempore ut vitae!</p>
+
+
+                    <form action=""></form>
+
+                    <div class="ll-socialmedia">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!--Bottom Copyright Area-->
+<div class="copyright-area">
+    <div class="container-fluid">
+        <div class="row mx-5">
+
+            <div class="col-md-6">
+                <div class="ll-paymentlogo">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><img src="images/payment/credit-card.png" alt=""></li>
+                        <li class="list-inline-item"><img src="images/payment/credit-cardtwo.png" alt=""></li>
+                        <li class="list-inline-item"><img src="images/payment/credit-cardthree.png" alt=""></li>
+                        <li class="list-inline-item"><img src="images/payment/credit-cardfour.png" alt=""></li>
+                        <li class="list-inline-item"><img src="images/payment/paypal.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="ll-copyright float-right">
+                    <p class="py-4">copyright &copy; 2018 logolagbey | All Rights Reserved</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--End Bottom Copyright Area-->
+
+
 <script src="js/jquery-2.2.2.min.js"></script>
 <script src="js/lamp.animation.js"></script>
 <script src="js/main.js"></script>
