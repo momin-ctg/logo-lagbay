@@ -30,19 +30,15 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
 .nav-area {
   font-family: $ff;
   display: flex;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 20px;
 
   .logo {
+
     a {
-      margin: 0;
-      display: block;
-      padding: 0;
-      color: #ffffff;
-      font-size: 30px;
-      position: relative;
-      bottom: 14px;
+      img{
+        width:auto;
+        height: 40px;
+      }
     }
   }
 
@@ -54,6 +50,13 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
 
   a {
     color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: $ff;
+    &:hover{
+      text-decoration: none;
+      color: #ffffff;
+    }
   }
   a:not(:last-child) {
     margin-right: 5em;
@@ -64,7 +67,7 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
   .btn-submit {
     background: #ffffff;
     padding: 10px;
-    color: #000000;
+    color: #787878;
     text-decoration: none;
   }
   img {
@@ -72,9 +75,15 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
   }
   a {
     color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: $ff;
+    &:hover{
+      text-decoration: none;
+    }
   }
   a:not(:last-child) {
-    margin-right: 3em;
+    margin-right: 2em;
   }
 }
 
@@ -91,11 +100,42 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
+  h2{
+    font-family: $fb;
+    font-size: 5vmin;
+    padding-bottom: 35px;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+    font-family: $ff;
+    font-size: 16px;
+    line-height: 2em;
+    letter-spacing: 1px;
+  }
+  a{
+    margin-top: 40px;
+    display: inline-flex;
+    background: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    color:#808080;
+    &:hover{
+      text-decoration: none;
+      color: #808080;
+    }
+    span{
+      img{
+        width: 35px;
+        height: auto;
+        padding-left: 5px;
+      }
+    }
+
+  }
 }
 
 //End Header Text Area
-
-
 
 
 
@@ -106,6 +146,10 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
 .logothumbnail-area{
   background: #eff1f5;
   padding: 100px 0;
+
+  .logo-displayarea{
+    margin-top: 20px;
+  }
 
   .ll-button-text{
     h2{
@@ -120,6 +164,7 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
       position: relative;
       display: inline-block;
       margin: auto;
+      margin-bottom: 50px;
       width: 18em;
       height: 4.5em;
       line-height: 3;
@@ -175,6 +220,72 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
     //End For home page Custom select design
 
   }
+
+
+  //for all logo thumbnail
+.logo-thumb{
+  background: #ffffff;
+  cursor: pointer;
+  margin-bottom: 30px;
+  .logo-caption{
+    border-top:1px solid #e0e2e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5em;
+
+    .ll-category{
+      color:#6e6e6e;
+      font-family: $ff;
+      font-size: 15px;
+    }
+    .ll-price{
+      position: relative;
+      bottom: 5px;
+      span{
+        font-size:12px;
+        margin-right: 10px;
+        font-weight: 300;
+        color:#6e6e6e;
+        text-decoration: line-through;
+        display: inline-block;
+        position: relative;
+        bottom: 3px;
+      }
+      color:#2452a2;
+      font-family: $ff;
+      font-size: 22px;
+      font-weight: bold;
+
+    }
+  }
+
+
+}
+
+  //end for all logo thumbnail
+
+
+  //For view all logo link
+.viewall-logo{
+
+  a{
+    background: #e3e6ee;
+    display: block;
+    color:#8c909c;
+    text-decoration: none;
+    font-family: $ff;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 1.2em;
+    &:hover{
+      background: darken(#e3e6ee, 10%);
+    }
+  }
+}
+  //End For view all logo link
+
 }
 
 
