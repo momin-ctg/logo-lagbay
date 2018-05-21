@@ -3,7 +3,7 @@
 <head>
     <title>Logo Lagbey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/scss/bootstrap.css"/>
     <link rel="stylesheet" href="css/scss/bootstrap-grid.css"/>
@@ -39,7 +39,7 @@
             <a href=""><img src="images/search.svg" alt=""></a>
             <a href=""><img src="images/cart.svg" alt=""></a>
             <a href="">Login/ Sign Up</a>
-            <a href="">Submit logo</a>
+            <a class="btn-submit" href="">Submit logo</a>
         </div>
     </div>
 
@@ -71,14 +71,17 @@
     <div class="container">
 
         <div class="ll-button-text text-center">
-            <h2>Check thousand of logo ideas</h2>
-            <select name="ll-industry" id="ll-industry">
-                <option value="">Corporate</option>
-                <option value="">Business</option>
-                <option value="">Manufacturing</option>
-                <option value="">Identity</option>
-                <option value=""></option>
-            </select>
+            <h2 style="font-family: 'TrebuchetMS-Bold', sans-serif;">Check thousand of logo ideas</h2>
+            <!--Homepage Custom Select-->
+            <div class="select">
+                <select name="slct" id="slct">
+                    <option>Select your industry</option>
+                    <option value="1">Corporate</option>
+                    <option value="2">Business</option>
+                    <option value="3">Manufacturing</option>
+                </select>
+            </div>
+            <!--End Homepage Custom Select-->
         </div>
 
 
@@ -103,58 +106,45 @@
 </div>
 <!--End Logo category text, dropdown and logo thumbnail-->
 
-<div class="buysell-logos">
+
+<!-- ===================================
+        Buy Logos and Sell logos Area
+     =================================== -->
+
+<div class="buysell-logosarea">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="ll-buylogos">
+            <div class="col-lg-6 col-xs-12">
+                <div class="ll-buylogos pr-md-5 text-center">
                     <h2>Buy logos</h2>
 
                     <div class="buy-logoimage">
-                        <img src="" alt="">
+                        <img src="images/buy-logos.svg" alt="logo-lagbay">
                     </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ut?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
 
+                    <a href=""> View All</a>
 
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="ll-selllogos">
+            <div class="col-lg-6 colo-xs-12">
+                <div class="ll-selllogos text-center pl-md-5">
                     <h2>Sell Logos</h2>
-                    .sell
+                    <div class="sell-logoimage">
+                        <img src="images/sell-logos.svg" alt="logo-lagbay">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ut?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+
+                    <a href="">Become a member</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--End buy logos and sell logos area-->
 
 
 <!-- ===================================
@@ -165,16 +155,19 @@
     <div class="container-fluid">
         <div class="row mx-5">
 
-            <div class="col-md-3">
-                <div class="ll-footer-about">
+            <div class="col-md-3 col-sm-6">
+                <div class="ll-footer-about w-75">
                     <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aperiam blanditiis
-                        doloribus eos est excepturi fuga modi quas, quia recusandae repudiandae sequi soluta
-                        tenetur!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aut cumque eligendi
+                        exercitationem molestiae molestias natus nisi odio officia perspiciatis quo repellendus saepe
+                        soluta sunt suscipit, tenetur! Commodi, distinctio.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ducimus, odit tempora ullam
+                        velit vero? Consectetur doloremque eius nisi tempore.</p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="ll-footer-ourcompany">
+            <div class="col-md-3 col-sm-6">
+                <div class="ll-footer-ourcompany pl-0">
                     <h2>Our Company</h2>
                     <a href="">How to join us</a>
                     <a href="">How it work</a>
@@ -185,8 +178,8 @@
                     <a href="">Affiliates</a>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="ll-footer-faq">
+            <div class="col-md-3 col-sm-6">
+                <div class="ll-footer-faq pl-0">
                     <h2>Help and Faq</h2>
                     <a href="">How to join us</a>
                     <a href="">How it work</a>
@@ -197,21 +190,37 @@
                     <a href="">Affiliates</a>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <h2>Subscribe</h2>
                 <div class="ll-footer-newsletter">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tempore ut vitae!</p>
+                    <p>Subscribe to get the latest news, update and offer <br/> information. Don't worry, we won't send
+                        spam!</p>
 
-
-                    <form action=""></form>
-
-                    <div class="ll-socialmedia">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                    <!--Footer Newsletter Subscription-->
+                    <div class="ll-subscription">
+                        <form autocomplete="off" action="/subscribe" method="post">
+                            <div class="ll-flex">
+                                <div style="flex: 1 1 0%;">
+                                    <input type="email" name="email" placeholder="john@example.com">
+                                </div>
+                                <div style="margin-left: -20px;">
+                                    <button type="submit" disabled="disabled">&#8594;</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
+                    <!--End Footer Newsletter Subscription-->
+
+                    <!--Footer Social Media-->
+                    <div class="ll-socialmedia">
+                        <a href=""><img src="images/social/facebook.svg" alt=""></a>
+                        <a href=""><img src="images/social/twitter.svg" alt=""></a>
+                        <a href=""><img src="images/social/google-plus.svg" alt=""></a>
+                        <a href=""><img src="images/social/instagram.svg" alt=""></a>
+                        <a href=""><img src="images/social/path.svg" alt=""></a>
+                        <a href=""><img src="images/social/youtube.svg" alt=""></a>
+                    </div>
+                    <!--End Footer Social Media-->
 
                 </div>
             </div>
@@ -227,20 +236,14 @@
         <div class="row mx-5">
 
             <div class="col-md-6">
-                <div class="ll-paymentlogo">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><img src="images/payment/credit-card.png" alt=""></li>
-                        <li class="list-inline-item"><img src="images/payment/credit-cardtwo.png" alt=""></li>
-                        <li class="list-inline-item"><img src="images/payment/credit-cardthree.png" alt=""></li>
-                        <li class="list-inline-item"><img src="images/payment/credit-cardfour.png" alt=""></li>
-                        <li class="list-inline-item"><img src="images/payment/paypal.png" alt=""></li>
-                    </ul>
+                <div class="ll-paymentlogo py-4 ">
+                    <img src="images/payment/pay.svg" alt="">
                 </div>
             </div>
 
             <div class="col-md-6">
-                <div class="ll-copyright float-right">
-                    <p class="py-4">copyright &copy; 2018 logolagbey | All Rights Reserved</p>
+                <div class="ll-copyright float-right py-4">
+                    <p>Copyright &copy; 2018 LogoLagbey | All Rights Reserved</p>
                 </div>
             </div>
 
@@ -248,8 +251,6 @@
     </div>
 </div>
 <!--End Bottom Copyright Area-->
-
-
 <script src="js/jquery-2.2.2.min.js"></script>
 <script src="js/lamp.animation.js"></script>
 <script src="js/main.js"></script>

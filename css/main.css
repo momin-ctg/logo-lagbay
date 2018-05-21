@@ -11,19 +11,16 @@
   src: url("../fonts/TrebuchetMS-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TrebuchetMS-Bold.woff") format("woff"), url("../fonts/TrebuchetMS-Bold.ttf") format("truetype"), url("../fonts/TrebuchetMS-Bold.svg#TrebuchetMS-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* =================================
-              For comments
-   ================================= */
-* {
-  margin: 0;
-  padding: 0; }
-
+/* ====================================
+      Common Variable Declerations
+   ==================================== */
 /* =================================
           Main Navigation Area
    ================================= */
 .nav-area {
+  font-family: "Roboto", sans-serif;
   display: flex;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px; }
   .nav-area .logo a {
@@ -43,6 +40,11 @@
   .center-nav a:not(:last-child) {
     margin-right: 5em; }
 
+.right-nav .btn-submit {
+  background: #ffffff;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none; }
 .right-nav img {
   width: 20px; }
 .right-nav a {
@@ -62,23 +64,186 @@
   color: #ffffff; }
 
 /* =================================
+    For Logo category text, dropdown
+       button and logo thumbnail
+   ================================= */
+.logothumbnail-area {
+  background: #eff1f5;
+  padding: 100px 0; }
+  .logothumbnail-area .ll-button-text h2 {
+    font-family: "TrebuchetMS-Bold", sans-serif;
+    font-size: 50px;
+    color: #5d5d5d;
+    padding-bottom: 30px; }
+  .logothumbnail-area .ll-button-text .select {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    width: 18em;
+    height: 4.5em;
+    line-height: 3;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: .25em;
+    border: 1px solid #c8c8c8; }
+    .logothumbnail-area .ll-button-text .select:hover::after {
+      color: #680fac; }
+    .logothumbnail-area .ll-button-text .select::after {
+      content: '\25BC';
+      position: absolute;
+      color: #8e8e8e;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: .6em 1em;
+      background: #ffffff;
+      pointer-events: none;
+      -webkit-transition: .25s all ease;
+      -o-transition: .25s all ease;
+      transition: .25s all ease; }
+    .logothumbnail-area .ll-button-text .select select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      outline: 0;
+      box-shadow: none;
+      border: 0 !important;
+      background: #ffffff;
+      background-image: none;
+      width: 100%;
+      margin: 0 auto;
+      padding: .2em 0 0 .5em;
+      color: #8e8e8e;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-family: "TrebuchetMS", sans-serif;
+      cursor: pointer; }
+      .logothumbnail-area .ll-button-text .select select::-ms-expand {
+        display: none; }
+      .logothumbnail-area .ll-button-text .select select:focus {
+        outline: none; }
+
+/* =====================================
+     For Buy logos and Sell Logos Area
+   ===================================== */
+.buysell-logosarea {
+  background: #ffffff;
+  padding: 80px 0; }
+  .buysell-logosarea .ll-buylogos:after {
+    content: '';
+    border-right: 1px solid #5e5e5e;
+    height: 75%;
+    width: 1px;
+    position: absolute;
+    bottom: 23%;
+    right: 0; }
+  .buysell-logosarea .ll-buylogos h2 {
+    font-family: "TrebuchetMS", sans-serif;
+    padding-bottom: 100px;
+    color: #707070;
+    font-size: 50px; }
+  .buysell-logosarea .ll-buylogos p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: #707070;
+    font-weight: 300;
+    line-height: 2em; }
+  .buysell-logosarea .ll-buylogos a {
+    max-width: 250px;
+    margin: 50px auto;
+    display: block;
+    background: #ca49d9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #ca49d9, #2452a2 60%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #ca49d9, #2452a2 60%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    text-decoration: none; }
+    .buysell-logosarea .ll-buylogos a:hover {
+      text-decoration: none; }
+  .buysell-logosarea .ll-buylogos .buy-logoimage {
+    padding-bottom: 100px; }
+    .buysell-logosarea .ll-buylogos .buy-logoimage img {
+      width: 200px;
+      height: auto; }
+  .buysell-logosarea .ll-selllogos h2 {
+    font-family: "TrebuchetMS", sans-serif;
+    padding-bottom: 90px;
+    color: #707070;
+    font-size: 50px; }
+  .buysell-logosarea .ll-selllogos p {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: #707070;
+    font-weight: 300;
+    line-height: 2em; }
+  .buysell-logosarea .ll-selllogos a {
+    max-width: 250px;
+    margin: 50px auto;
+    display: block;
+    background: #ca49d9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #ca49d9, #2452a2 60%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #ca49d9, #2452a2 60%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    text-decoration: none; }
+    .buysell-logosarea .ll-selllogos a:hover {
+      text-decoration: none; }
+  .buysell-logosarea .ll-selllogos .sell-logoimage {
+    padding-bottom: 90px; }
+    .buysell-logosarea .ll-selllogos .sell-logoimage img {
+      width: 200px;
+      height: auto; }
+
+/* =================================
          For Main Footer Area
    ================================= */
 .mainfooter-area {
-  background: gray; }
+  background: #404044;
+  padding: 150px 0; }
+  .mainfooter-area h2 {
+    color: #ffffff;
+    font-family: "TrebuchetMS", sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+    letter-spacing: 1px; }
 
+.ll-footer-about p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #8b8b8b;
+  font-weight: 300; }
 .ll-footer-about:after {
   content: '';
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #8b8b8b;
   position: absolute;
   right: 20%;
-  top: 15%;
+  top: 20%;
   width: 1px;
   height: 80%; }
 
 .ll-footer-ourcompany:after, .ll-footer-faq:after {
   content: '';
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #8b8b8b;
   position: absolute;
   right: 20%;
   top: 20%;
@@ -86,9 +251,100 @@
   height: 80%; }
 .ll-footer-ourcompany a, .ll-footer-faq a {
   display: block;
-  color: white; }
+  min-width: 30%;
+  max-width: 50%;
+  color: #8b8b8b;
+  font-family: "Roboto", sans-serif;
+  padding: 2px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 2px; }
+  .ll-footer-ourcompany a:hover, .ll-footer-faq a:hover {
+    background: #8b8b8b;
+    color: #404044;
+    text-decoration: none; }
 
+.ll-footer-newsletter p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.8em;
+  color: #8b8b8b;
+  font-weight: 300; }
+
+.ll-subscription {
+  width: 300px;
+  display: block; }
+
+.ll-subscription form {
+  font-family: "Roboto", sans-serif;
+  border-radius: 30px; }
+
+.ll-subscription form button {
+  border: none;
+  font-size: 25px;
+  padding: 3px 15px;
+  /*gradient*/
+  background: #ca4989;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #ca4989, #df63c0 60%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(135deg, #ca4989, #df63c0 60%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*end gradient*/
+  font-family: 'Proxima Nova', sans-serif;
+  color: #FFFFFF;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 1px #404044;
+  box-shadow: 0 0 1px #404044; }
+
+.ll-flex {
+  align-items: center;
+  display: flex; }
+
+.ll-subscription form input {
+  padding: 10px;
+  height: 43px;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+  color: #646F79;
+  font-size: 14px;
+  border: 1px solid #8b8b8b;
+  border-right: none;
+  width: 100%;
+  background: transparent; }
+
+.ll-subscription form input:focus {
+  outline: none; }
+
+.ll-socialmedia {
+  margin-top: 30px;
+  width: 300px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .ll-socialmedia img {
+    width: 42px;
+    height: auto; }
+
+/* =================================
+         For Footer Copyright
+   ================================= */
 .copyright-area {
-  background: #000; }
+  background: #181819;
+  margin: 0;
+  padding: 0; }
+  .copyright-area .ll-paymentlogo img {
+    width: auto;
+    height: 30px; }
+  .copyright-area .ll-copyright p {
+    color: #9b9b9b;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px; }
 
 /*# sourceMappingURL=main.css.map */
