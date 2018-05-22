@@ -20,14 +20,14 @@
 .nav-area {
   font-family: "Roboto", sans-serif;
   display: flex;
-  padding-top: 20px; }
+  padding: 15px;
+  background: gray; }
   .nav-area .logo a img {
     width: auto;
     height: 40px; }
 
 .center-nav {
-  margin-right: auto;
-  margin-left: auto; }
+  margin-right: auto; }
   .center-nav a {
     color: #ffffff;
     text-decoration: none;
@@ -145,7 +145,7 @@
       background-image: none;
       width: 100%;
       margin: 0 auto;
-      padding: .2em 0 0 .5em;
+      padding: .2em 0 0 .8em;
       color: #8e8e8e;
       font-size: 20px;
       letter-spacing: 1px;
@@ -286,6 +286,175 @@
     .buysell-logosarea .ll-selllogos .sell-logoimage img {
       width: 200px;
       height: auto; }
+
+/* =================================
+     For Logo Details Page(Page Two)
+   ================================= */
+.logodeatils-area {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background: #eff1f5; }
+  .logodeatils-area .logodetails-description {
+    margin-top: 25px; }
+    .logodeatils-area .logodetails-description p {
+      color: #636363;
+      font-family: "Roboto", sans-serif;
+      line-height: 2em;
+      font-size: 14px; }
+
+.llsimilar-logos {
+  margin-top: 45px; }
+  .llsimilar-logos h3 {
+    font-family: "TrebuchetMS-Bold", sans-serif;
+    font-size: 28px;
+    color: #535353;
+    margin-bottom: 25px; }
+  .llsimilar-logos .logo-thumb {
+    background: #ffffff;
+    cursor: pointer;
+    margin-bottom: 30px; }
+    .llsimilar-logos .logo-thumb .logo-caption {
+      border-top: 1px solid #e0e2e6;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1em; }
+      .llsimilar-logos .logo-thumb .logo-caption .ll-category {
+        color: #6e6e6e;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px; }
+      .llsimilar-logos .logo-thumb .logo-caption .ll-price {
+        position: relative;
+        color: #2452a2;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: bold; }
+        .llsimilar-logos .logo-thumb .logo-caption .ll-price span {
+          font-size: 10px;
+          margin-right: 10px;
+          font-weight: 300;
+          color: #6e6e6e;
+          text-decoration: line-through;
+          display: inline-block;
+          position: relative;
+          bottom: 3px; }
+
+.lldetails-sidebararea {
+  margin-top: 5px;
+  padding: 25px;
+  background: #ffffff; }
+  .lldetails-sidebararea .lldetails-sidebar h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: #616161;
+    margin-bottom: 5px; }
+  .lldetails-sidebararea .lldetails-sidebar span {
+    display: block;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+    color: #787878; }
+  .lldetails-sidebararea .lldetails-sidebar .llbuyer-img {
+    display: inline;
+    width: 32px;
+    height: 32px; }
+    .lldetails-sidebararea .lldetails-sidebar .llbuyer-img img {
+      display: inline-block;
+      padding-right: 5px;
+      object-fit: cover; }
+  .lldetails-sidebararea .lldetails-price h3 {
+    color: #2452a2;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 35px 0; }
+    .lldetails-sidebararea .lldetails-price h3 span {
+      color: #c5c5c5;
+      font-size: 21px;
+      text-decoration: line-through;
+      font-weight: 300;
+      position: relative;
+      bottom: 6px; }
+  .lldetails-sidebararea .lldetails-customizeprice input + label {
+    font-family: "Roboto", sans-serif;
+    color: #616161;
+    font-size: 18px; }
+  .lldetails-sidebararea .lldetails-customizeprice span {
+    font-weight: 300; }
+  .lldetails-sidebararea .lldetails-customizeprice a {
+    background: #ca49d9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #ca49d9, #2452a2 60%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #ca49d9, #2452a2 60%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    padding: .6em 0;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 30px 0;
+    text-decoration: none; }
+    .lldetails-sidebararea .lldetails-customizeprice a:hover {
+      text-decoration: none;
+      color: #ffffff; }
+  .lldetails-sidebararea .logo-shortbrief table .lltr {
+    font-family: "Roboto", sans-serif;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 16px; }
+    .lldetails-sidebararea .logo-shortbrief table .lltr td:first-child {
+      color: #4a4a4a; }
+    .lldetails-sidebararea .logo-shortbrief table .lltr td:last-child {
+      font-weight: 300;
+      color: #787878;
+      text-align: right; }
+
+.llotherlogos-user {
+  background: #e7eaf1;
+  padding: 50px 0; }
+  .llotherlogos-user h3 {
+    font-family: "TrebuchetMS", sans-serif;
+    font-size: 28px;
+    color: #535353;
+    margin-bottom: 25px; }
+  .llotherlogos-user .llotherlogos-userthumb {
+    display: flex;
+    flex-wrap: wrap; }
+    .llotherlogos-user .llotherlogos-userthumb .logo-thumb {
+      background: #ffffff;
+      cursor: pointer;
+      margin-bottom: 30px; }
+      .llotherlogos-user .llotherlogos-userthumb .logo-thumb .logo-caption {
+        border-top: 1px solid #e0e2e6;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em; }
+        .llotherlogos-user .llotherlogos-userthumb .logo-thumb .logo-caption .ll-category {
+          color: #6e6e6e;
+          font-family: "Roboto", sans-serif;
+          font-size: 12px; }
+        .llotherlogos-user .llotherlogos-userthumb .logo-thumb .logo-caption .ll-price {
+          position: relative;
+          color: #2452a2;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          font-weight: bold; }
+          .llotherlogos-user .llotherlogos-userthumb .logo-thumb .logo-caption .ll-price span {
+            font-size: 8px;
+            margin-right: 5px;
+            font-weight: 300;
+            color: #6e6e6e;
+            text-decoration: line-through;
+            display: inline-block;
+            position: relative;
+            bottom: 3px; }
 
 /* =================================
          For Main Footer Area
