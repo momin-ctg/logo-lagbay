@@ -287,9 +287,9 @@
       width: 200px;
       height: auto; }
 
-/* =================================
-     For Logo Details Page(Page Two)
-   ================================= */
+/* ====================================
+     For Logo Details Page (Page Two)
+   ==================================== */
 .logodeatils-area {
   padding-top: 40px;
   padding-bottom: 60px;
@@ -455,6 +455,180 @@
             display: inline-block;
             position: relative;
             bottom: 3px; }
+
+/* ========================================
+    For All Logo and Category Area(page 3)
+   ======================================== */
+.llalllogos-area {
+  background: #eff1f5;
+  padding-top: 50px; }
+  .llalllogos-area .llfiltering-area h2 {
+    color: #636363;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    border-bottom: 1px solid #b8b8b8;
+    padding-bottom: 15px;
+    margin-bottom: 20px; }
+  .llalllogos-area .llcategory-text {
+    border-bottom: 1px solid #b8b8b8; }
+    .llalllogos-area .llcategory-text p {
+      font-family: "Roboto", sans-serif;
+      color: #636363;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      display: block;
+      padding-bottom: 15px; }
+      .llalllogos-area .llcategory-text p label {
+        padding-left: 10px; }
+        .llalllogos-area .llcategory-text p label span {
+          font-weight: 300; }
+  .llalllogos-area .llcategory-color {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .llalllogos-area .llcategory-color h3 {
+      color: #636363;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      margin-bottom: 20px; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter span {
+      width: 28px;
+      height: 28px;
+      display: inline-block;
+      cursor: pointer; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf1 {
+      background: #3D6CBF; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf2 {
+      background: #239524; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf3 {
+      background: #564ABA; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf4 {
+      background: #0B285A; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf5 {
+      background: #6F27B4; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf6 {
+      background: #38C4BF; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf7 {
+      background: #FB8865; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf8 {
+      background: #D62E78; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf9 {
+      background: #CE2B2B; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf10 {
+      background: #3D6CBF; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf11 {
+      background: #3D6CBF; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf12 {
+      background: #239524; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf13 {
+      background: #564ABA; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf14 {
+      background: #0B285A; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf15 {
+      background: #6F27B4; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf16 {
+      background: #38C4BF; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf17 {
+      background: #FB8865; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf18 {
+      background: #D62E78; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf19 {
+      background: #CE2B2B; }
+    .llalllogos-area .llcategory-color .llcategory-colorfilter .cf20 {
+      background: #3D6CBF; }
+  .llalllogos-area .llsell-trending {
+    border-bottom: 1px solid #b8b8b8;
+    border-top: 1px solid #b8b8b8; }
+    .llalllogos-area .llsell-trending .llcontrol-group {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      margin: 10px;
+      font-family: "Roboto", sans-serif; }
+      .llalllogos-area .llsell-trending .llcontrol-group .control {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-size: 14px; }
+        .llalllogos-area .llsell-trending .llcontrol-group .control input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0; }
+      .llalllogos-area .llsell-trending .llcontrol-group .control__indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: #e6e6e6;
+        border-radius: 50%; }
+    .llalllogos-area .llsell-trending .control:hover input ~ .control__indicator,
+    .llalllogos-area .llsell-trending .control input:focus ~ .control__indicator {
+      background: #ccc; }
+    .llalllogos-area .llsell-trending .control input:checked ~ .control__indicator {
+      background: gray; }
+    .llalllogos-area .llsell-trending .control input:disabled ~ .control__indicator {
+      background: #e6e6e6;
+      opacity: 0.6;
+      pointer-events: none; }
+    .llalllogos-area .llsell-trending .control__indicator:after {
+      content: '';
+      position: absolute;
+      display: none; }
+    .llalllogos-area .llsell-trending .control input:checked ~ .control__indicator:after {
+      display: block; }
+    .llalllogos-area .llsell-trending .control--checkbox .control__indicator:after {
+      left: 8px;
+      top: 4px;
+      width: 3px;
+      height: 8px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg); }
+    .llalllogos-area .llsell-trending .control--checkbox input:disabled ~ .control__indicator:after {
+      border-color: #7b7b7b; }
+    .llalllogos-area .llsell-trending .control--radio .control__indicator:after {
+      left: 7px;
+      top: 7px;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background: #fff; }
+  .llalllogos-area .logo-thumb {
+    background: #ffffff;
+    cursor: pointer;
+    margin-bottom: 30px; }
+    .llalllogos-area .logo-thumb .logo-caption {
+      border-top: 1px solid #e0e2e6;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1em; }
+      .llalllogos-area .logo-thumb .logo-caption .ll-category {
+        color: #6e6e6e;
+        font-family: "Roboto", sans-serif;
+        font-size: 12px; }
+      .llalllogos-area .logo-thumb .logo-caption .ll-price {
+        position: relative;
+        bottom: 2px;
+        color: #2452a2;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: bold; }
+        .llalllogos-area .logo-thumb .logo-caption .ll-price span {
+          font-size: 10px;
+          margin-right: 5px;
+          font-weight: 300;
+          color: #6e6e6e;
+          text-decoration: line-through;
+          display: inline-block;
+          position: relative;
+          bottom: 3px; }
 
 /* =================================
          For Main Footer Area

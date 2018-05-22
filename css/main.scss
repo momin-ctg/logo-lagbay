@@ -23,6 +23,7 @@
 $ff: 'Roboto', sans-serif;
 $ft: 'TrebuchetMS', sans-serif;
 $fb: 'TrebuchetMS-Bold', sans-serif;
+$bg: #eff1f5;
 
 /* =================================
           Main Navigation Area
@@ -400,9 +401,9 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
 
 //End Buy Logos and Sell Logos Area
 
-/* =================================
-     For Logo Details Page(Page Two)
-   ================================= */
+/* ====================================
+     For Logo Details Page (Page Two)
+   ==================================== */
 .logodeatils-area {
   padding-top: 40px;
   padding-bottom: 60px;
@@ -567,10 +568,10 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
             color: #4a4a4a;
 
           }
-          &:last-child{
-              font-weight: 300;
-              color: #787878;
-              text-align: right;
+          &:last-child {
+            font-weight: 300;
+            color: #787878;
+            text-align: right;
 
           }
 
@@ -641,6 +642,262 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
 }
 
 //End Logo Details Page Design
+
+/* ========================================
+    For All Logo and Category Area(page 3)
+   ======================================== */
+
+.llalllogos-area {
+  background: $bg;
+  padding-top: 50px;
+
+  .llfiltering-area {
+    h2 {
+      color: #636363;
+      font-family: $ff;
+      font-weight: 400;
+      font-size: 28px;
+      border-bottom: 1px solid #b8b8b8;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .llcategory-text {
+    border-bottom: 1px solid #b8b8b8;
+    p {
+      font-family: $ff;
+      color: #636363;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      display: block;
+      padding-bottom: 15px;
+
+      label {
+        padding-left: 10px;
+        span {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .llcategory-color {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    h3 {
+      color: #636363;
+      font-family: $ff;
+      font-weight: 400;
+      font-size: 28px;
+      //border-bottom: 1px solid #b8b8b8;
+      //padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+
+    .llcategory-colorfilter {
+      span {
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .cf1 {
+        background: #3D6CBF;
+      }
+      .cf2 {
+        background: #239524;
+      }
+      .cf3 {
+        background: #564ABA;
+      }
+      .cf4 {
+        background: #0B285A;
+      }
+      .cf5 {
+        background: #6F27B4;
+      }
+      .cf6 {
+        background: #38C4BF;
+      }
+      .cf7 {
+        background: #FB8865;
+      }
+      .cf8 {
+        background: #D62E78;
+      }
+      .cf9 {
+        background: #CE2B2B;
+      }
+      .cf10 {
+        background: #3D6CBF;
+      }
+      .cf11 {
+        background: #3D6CBF;
+      }
+      .cf12 {
+        background: #239524;
+      }
+      .cf13 {
+        background: #564ABA;
+      }
+      .cf14 {
+        background: #0B285A;
+      }
+      .cf15 {
+        background: #6F27B4;
+      }
+      .cf16 {
+        background: #38C4BF;
+      }
+      .cf17 {
+        background: #FB8865;
+      }
+      .cf18 {
+        background: #D62E78;
+      }
+      .cf19 {
+        background: #CE2B2B;
+      }
+      .cf20 {
+        background: #3D6CBF;
+      }
+    }
+
+  }
+
+  //Radio Button Design
+
+  .llsell-trending {
+
+    border-bottom: 1px solid #b8b8b8;
+    border-top: 1px solid #b8b8b8;
+
+    .llcontrol-group {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      margin: 10px;
+      font-family: $ff;
+      .control {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        font-size: 14px;
+        input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+        }
+      }
+      .control__indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: #e6e6e6;
+        border-radius: 50%;
+      }
+    }
+
+    .control:hover input ~ .control__indicator,
+    .control input:focus ~ .control__indicator {
+      background: #ccc;
+    }
+    .control input:checked ~ .control__indicator {
+      background: gray;
+    }
+    .control:hover input:not([disabled]):checked ~ .control__indicator,
+    .control input:checked:focus ~ .control__indicator {
+      //background: #0e647d;
+    }
+    .control input:disabled ~ .control__indicator {
+      background: #e6e6e6;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+    .control__indicator:after {
+      content: '';
+      position: absolute;
+      display: none;
+    }
+    .control input:checked ~ .control__indicator:after {
+      display: block;
+    }
+    .control--checkbox .control__indicator:after {
+      left: 8px;
+      top: 4px;
+      width: 3px;
+      height: 8px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    .control--checkbox input:disabled ~ .control__indicator:after {
+      border-color: #7b7b7b;
+    }
+    .control--radio .control__indicator:after {
+      left: 7px;
+      top: 7px;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+  }
+
+  //End Radio Button Design
+
+  //for all logo thumbnail logo details
+  .logo-thumb {
+    background: #ffffff;
+    cursor: pointer;
+    margin-bottom: 30px;
+    .logo-caption {
+      border-top: 1px solid #e0e2e6;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1em;
+
+      .ll-category {
+        color: #6e6e6e;
+        font-family: $ff;
+        font-size: 12px;
+      }
+      .ll-price {
+        position: relative;
+        bottom: 2px;
+        span {
+          font-size: 10px;
+          margin-right: 5px;
+          font-weight: 300;
+          color: #6e6e6e;
+          text-decoration: line-through;
+          display: inline-block;
+          position: relative;
+          bottom: 3px;
+        }
+        color: #2452a2;
+        font-family: $ff;
+        font-size: 16px;
+        font-weight: bold;
+
+      }
+    }
+
+  }
+
+  //end for all logo thumbnail logo details
+}
+
+//End All Logo and Category Area
 
 /* =================================
          For Main Footer Area
