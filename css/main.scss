@@ -780,7 +780,8 @@ $bg: #eff1f5;
       vertical-align: top;
       text-align: left;
       margin: 10px;
-      font-family: $ff;
+      padding-top: 15px;
+
       .control {
         display: block;
         position: relative;
@@ -788,6 +789,9 @@ $bg: #eff1f5;
         margin-bottom: 15px;
         cursor: pointer;
         font-size: 14px;
+        font-family: $ff;
+        font-weight: 300;
+        color:#606060;
         input {
           position: absolute;
           z-index: -1;
@@ -810,7 +814,7 @@ $bg: #eff1f5;
       background: #ccc;
     }
     .control input:checked ~ .control__indicator {
-      background: gray;
+      background: #707070;
     }
     .control:hover input:not([disabled]):checked ~ .control__indicator,
     .control input:checked:focus ~ .control__indicator {

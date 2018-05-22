@@ -547,14 +547,17 @@
       vertical-align: top;
       text-align: left;
       margin: 10px;
-      font-family: "Roboto", sans-serif; }
+      padding-top: 15px; }
       .llalllogos-area .llsell-trending .llcontrol-group .control {
         display: block;
         position: relative;
         padding-left: 30px;
         margin-bottom: 15px;
         cursor: pointer;
-        font-size: 14px; }
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 3;
+        color: #606060; }
         .llalllogos-area .llsell-trending .llcontrol-group .control input {
           position: absolute;
           z-index: -1;
@@ -571,7 +574,7 @@
     .llalllogos-area .llsell-trending .control input:focus ~ .control__indicator {
       background: #ccc; }
     .llalllogos-area .llsell-trending .control input:checked ~ .control__indicator {
-      background: gray; }
+      background: #707070; }
     .llalllogos-area .llsell-trending .control input:disabled ~ .control__indicator {
       background: #e6e6e6;
       opacity: 0.6;
