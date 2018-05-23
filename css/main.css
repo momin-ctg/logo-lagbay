@@ -800,7 +800,7 @@ body {
       background: -moz-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
       background: -webkit-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
       background: linear-gradient(to right, #ca49d9 0%, #5057bc 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca49d9', endColorstr='#5057bc',GradientType=1 );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca49d9', endColorstr='#5057bc', GradientType=1);
       width: 25vw;
       display: block;
       letter-spacing: 1px;
@@ -812,6 +812,61 @@ body {
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
       .llpurchase-detailsarea .lldisplay-total a:hover {
         text-decoration: none; }
+
+/* =================================
+    For  How it Works Page (Page 5)
+   ================================= */
+.llhiw-area {
+  background: #f8f8f8;
+  padding-top: 8vh; }
+  .llhiw-area .llhiw-header h2 {
+    color: #606060;
+    font-family: "TrebuchetMS", sans-serif;
+    font-size: 40px;
+    display: inline-block;
+    position: relative; }
+    .llhiw-area .llhiw-header h2::after {
+      content: '';
+      position: absolute;
+      left: 10%;
+      display: inline-block;
+      height: 1em;
+      width: 80%;
+      border-bottom: 2px solid;
+      border-image: linear-gradient(to right, #CA49D9, #2452A2);
+      border-image-slice: 1;
+      opacity: 0.6;
+      margin-top: 15px; }
+  .llhiw-area .llhiw-text {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .llhiw-area .llhiw-text p {
+      font-family: "TrebuchetMS", sans-serif;
+      margin: 0;
+      padding-bottom: 25px;
+      font-size: 32px;
+      line-height: 1.2em;
+      color: #606060; }
+      .llhiw-area .llhiw-text p span:first-child {
+        display: inline-block;
+        position: relative;
+        top: 35px;
+        font-size: 80px;
+        color: #808080;
+        opacity: 0.2; }
+      .llhiw-area .llhiw-text p span:last-child {
+        display: block;
+        color: #606060;
+        margin-left: 45px; }
+    .llhiw-area .llhiw-text small {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      line-height: 2em;
+      color: #808080;
+      font-weight: lighter;
+      margin-left: 45px; }
 
 /* =================================
          For Main Footer Area

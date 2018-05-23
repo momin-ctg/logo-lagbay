@@ -24,8 +24,8 @@ $ff: 'Roboto', sans-serif;
 $ft: 'TrebuchetMS', sans-serif;
 $fb: 'TrebuchetMS-Bold', sans-serif;
 $bg: #eff1f5;
-$blue-colors:#2452a2;
-$gray-colors:#616161;
+$blue-colors: #2452a2;
+$gray-colors: #616161;
 body {
   background: #eff1f5 !important;
 }
@@ -912,7 +912,6 @@ body {
 
 //End For All Logo and Category Area( Page 3)
 
-
 /* =================================
      Logo Purchase Details (Page 4)
    ================================= */
@@ -920,8 +919,8 @@ body {
 .llpurchase-detailsarea {
   padding-top: 60px;
   background: $bg;
-  h2{
-    color:#616161;
+  h2 {
+    color: #616161;
     font-family: $ff;
     font-weight: 400;
     padding-bottom: .2em;
@@ -929,17 +928,16 @@ body {
   .llpurchase-details {
     background: #ffffff;
 
-
-    .llpurchase-form{
+    .llpurchase-form {
       border-bottom: 1px solid #b5b5b5;
 
-      .llpurchase-logos{
+      .llpurchase-logos {
         padding: 20px;
-        p{
+        p {
           cursor: pointer;
           display: inline-block;
           margin: 0;
-          color:#616161;
+          color: #616161;
           font-family: $ff;
           text-transform: capitalize;
           font-size: 20px;
@@ -948,40 +946,39 @@ body {
             height: 100%;
             display: inline-block;
             object-fit: cover;
-            padding-right:.5em;
+            padding-right: .5em;
           }
         }
       }
 
-
-      .llpurchase-logoprice{
+      .llpurchase-logoprice {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 20px 20px 20px 0;
-        p{
+        p {
           margin: 0;
           cursor: pointer;
-          &:first-of-type{
+          &:first-of-type {
             font-family: $ff;
-            color:$blue-colors;
+            color: $blue-colors;
             font-size: 2em;
           }
-          &:last-of-type{
+          &:last-of-type {
             font-family: $ff;
-            font-size:16px;
+            font-size: 16px;
             font-weight: lighter;
             letter-spacing: 1px;
             text-transform: capitalize;
           }
 
-          span{
-            img{
+          span {
+            img {
               width: 12px;
               height: auto;
               position: relative;
-              bottom:2px;
+              bottom: 2px;
               right: .3em;
             }
           }
@@ -991,97 +988,92 @@ body {
     }
   }
 
-  .lldiscount-code{
+  .lldiscount-code {
     padding: 3.5em 1em;
     height: 80px;
     border-bottom: 1px solid #b5b5b5;
-    .llcoupon-text{
+    .llcoupon-text {
       font-family: $ff;
       font-size: 20px;
       color: $gray-colors;
       font-weight: lighter;
     }
-    .llcoupon-form{
-      form{
-        input{
+    .llcoupon-form {
+      form {
+        input {
           text-align: center;
           width: 12em;
           margin-left: 10px;
           display: inline-block;
-          &:focus{
+          &:focus {
             outline: none;
           }
         }
-        input[type="text"]{
-          border:none;
+        input[type="text"] {
+          border: none;
           background: #eeeeee;
           padding: 10px 5px;
           font-size: 16px;
           font-family: $ff;
-          font-style:italic;
-          color:$blue-colors;
+          font-style: italic;
+          color: $blue-colors;
         }
 
-        input[type="submit"]{
+        input[type="submit"] {
           border: none;
-          padding:14px;
-          background-color:#3F4DAF;
-          cursor:pointer;
-          display:block;
-          width:12em;
+          padding: 14px;
+          background-color: #3F4DAF;
+          cursor: pointer;
+          display: block;
+          width: 12em;
           font-family: $ff;
-          color:#ffffff;
+          color: #ffffff;
           letter-spacing: 1px;
-          box-shadow: 0 0 2px rgba(0,0,0,0.3);
-          &:hover{
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+          &:hover {
             background: darken(#3F4DAF, 10%);
           }
         }
 
-
       }
     }
 
-
-
   }
 
-
-
-  .llgrand-total{
+  .llgrand-total {
     padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height:180px;
+    min-height: 180px;
 
-    .llcontinue-shoping{
-      a{
+    .llcontinue-shoping {
+      a {
         background: #5057bc;
         padding: 1.5em 3em;
-        color:#ffffff;
+        color: #ffffff;
         font-size: 12px;
         text-transform: none;
         text-decoration: none;
-        &:hover{
+        &:hover {
           text-decoration: none;
           background: darken(#5057bc, 10%);
         }
       }
     }
-    .llgt-price{
-      p{
+    .llgt-price {
+      p {
         color: #535353;
         font-family: $ff;
         margin: 0;
-        &:first-child{
+        &:first-child {
           font-size: 14px;
           font-weight: lighter;
         }
 
-        &:last-child{
+        &:last-child {
           font-size: 32px;
           font-weight: bold;
           text-transform: capitalize;
@@ -1090,84 +1082,162 @@ body {
     }
   }
 
-
-
-
-  .llpaypal-brief{
+  .llpaypal-brief {
     background: #ffffff;
     cursor: pointer;
     img {
-      width:100px;
-      height:auto;
+      width: 100px;
+      height: auto;
     }
-    small{
+    small {
       font-family: $ff;
-      font-weight:normal;
-      color:#989898;
+      font-weight: normal;
+      color: #989898;
     }
 
-    &:hover{
-    border: 1px solid blue;
-  }
+    &:hover {
+      border: 1px solid blue;
+    }
 
   }
 
-  .llintgateway-brief{
+  .llintgateway-brief {
     background: #ffffff;
     cursor: pointer;
-    img{
+    img {
       height: 30px;
       width: auto;
     }
 
-    small{
+    small {
       font-family: $ff;
-      font-weight:normal;
-      color:#989898;
+      font-weight: normal;
+      color: #989898;
     }
   }
 
-.lldisplay-total{
-  width: 35vw;
-  display: block;
-  background: #ffffff;
-  margin: 0 auto;
-  p{
-    font-size: 2em;
-    color:#2452a2;
-    font-family: $ff;
-    span{
-      font-weight:600;
+  .lldisplay-total {
+    width: 35vw;
+    display: block;
+    background: #ffffff;
+    margin: 0 auto;
+    p {
+      font-size: 2em;
+      color: #2452a2;
+      font-family: $ff;
+      span {
+        font-weight: 600;
+      }
     }
-  }
 
-    a{
+    a {
       background: #ca49d9;
       background: -moz-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
-      background: -webkit-linear-gradient(left, #ca49d9 0%,#5057bc 100%);
-      background: linear-gradient(to right, #ca49d9 0%,#5057bc 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca49d9', endColorstr='#5057bc',GradientType=1 );
+      background: -webkit-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
+      background: linear-gradient(to right, #ca49d9 0%, #5057bc 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca49d9', endColorstr='#5057bc', GradientType=1);
       width: 25vw;
       display: block;
       letter-spacing: 1px;
       margin: auto;
       padding: .8em 3em;
-      color:#ffffff;
+      color: #ffffff;
       font-size: 22px;
       text-decoration: none;
-      box-shadow: 0 0 2px rgba(0,0,0,0.3);
-      &:hover{
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+      &:hover {
         text-decoration: none;
       }
     }
 
-}
-
-
+  }
 
 }
 
 //End Logo Purchase Details (Page 4)
+
+/* =================================
+    For  How it Works Page (Page 5)
+   ================================= */
+.llhiw-area {
+  background: #f8f8f8;
+  padding-top: 8vh;
+
+  .llhiw-header {
+    h2 {
+      color: #606060;
+      font-family: $ft;
+      font-size: 40px;
+      display: inline-block;
+      position: relative;
+      //border-bottom:1px solid #2452a2;
+      //opacity: 0.3;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 10%;
+        display: inline-block;
+        height: 1em;
+        width: 80%;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #CA49D9, #2452A2);
+        border-image-slice: 1;
+        opacity: 0.6;
+        margin-top: 15px;
+
+      }
+    }
+  }
+
+.llhiw-text{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p{
+    font-family: $ft;
+    margin: 0;
+    padding-bottom: 25px;
+    font-size: 32px;
+    line-height: 1.2em;
+    color:#606060;
+
+    span{
+      &:first-child{
+        display: inline-block;
+        position: relative;
+        top:35px;
+        font-size: 80px;
+        color:#808080;
+        opacity: 0.2;
+      }
+
+      &:last-child{
+        display: block;
+        color:#606060;
+        margin-left: 45px;
+      }
+
+    }
+  }
+small{
+  font-family: $ff;
+  font-size: 14px;
+  line-height: 2em;
+  color:#808080;
+  font-weight: lighter;
+  margin-left: 45px;
+
+}
+
+}
+
+}
+
+//End For How It Works Page
+
+
 
 /* =================================
          For Main Footer Area
