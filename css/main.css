@@ -14,12 +14,16 @@
 /* ====================================
       Common Variable Declerations
    ==================================== */
+body {
+  background: #eff1f5 !important; }
+
 /* =================================
           Main Navigation Area
    ================================= */
 .nav-area {
   font-family: "Roboto", sans-serif;
   display: flex;
+  flex-wrap: wrap;
   padding: 15px;
   background: gray; }
   .nav-area .logo a img {
@@ -403,17 +407,20 @@
     .lldetails-sidebararea .lldetails-customizeprice a:hover {
       text-decoration: none;
       color: #ffffff; }
-  .lldetails-sidebararea .logo-shortbrief table .lltr {
+  .lldetails-sidebararea .logo-shortbrief table tr {
     font-family: "Roboto", sans-serif;
     display: block;
-    margin-bottom: 30px;
-    font-size: 16px; }
-    .lldetails-sidebararea .logo-shortbrief table .lltr td:first-child {
-      color: #4a4a4a; }
-    .lldetails-sidebararea .logo-shortbrief table .lltr td:last-child {
-      font-weight: 300;
-      color: #787878;
-      text-align: right; }
+    margin-bottom: 10px;
+    font-size: 14px; }
+    .lldetails-sidebararea .logo-shortbrief table tr td {
+      margin-bottom: 10px; }
+      .lldetails-sidebararea .logo-shortbrief table tr td:first-child {
+        color: #4a4a4a; }
+      .lldetails-sidebararea .logo-shortbrief table tr td:last-child {
+        text-align: right;
+        font-size: 12px;
+        font-weight: 300;
+        color: #787878; }
 
 .llotherlogos-user {
   background: #e7eaf1;
@@ -556,7 +563,7 @@
         cursor: pointer;
         font-size: 14px;
         font-family: "Roboto", sans-serif;
-        font-weight: 3;
+        font-weight: 300;
         color: #606060; }
         .llalllogos-area .llsell-trending .llcontrol-group .control input {
           position: absolute;
@@ -632,6 +639,179 @@
           display: inline-block;
           position: relative;
           bottom: 3px; }
+
+/* =================================
+     Logo Purchase Details (Page 4)
+   ================================= */
+.llpurchase-detailsarea {
+  padding-top: 60px;
+  background: #eff1f5; }
+  .llpurchase-detailsarea h2 {
+    color: #616161;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding-bottom: .2em; }
+  .llpurchase-detailsarea .llpurchase-details {
+    background: #ffffff; }
+    .llpurchase-detailsarea .llpurchase-details .llpurchase-form {
+      border-bottom: 1px solid #b5b5b5; }
+      .llpurchase-detailsarea .llpurchase-details .llpurchase-form .llpurchase-logos {
+        padding: 20px; }
+        .llpurchase-detailsarea .llpurchase-details .llpurchase-form .llpurchase-logos p {
+          cursor: pointer;
+          display: inline-block;
+          margin: 0;
+          color: #616161;
+          font-family: "Roboto", sans-serif;
+          text-transform: capitalize;
+          font-size: 20px; }
+          .llpurchase-detailsarea .llpurchase-details .llpurchase-form .llpurchase-logos p img {
+            width: 200px;
+            height: 100%;
+            display: inline-block;
+            object-fit: cover;
+            padding-right: .5em; }
+      .llpurchase-detailsarea .llpurchase-details .llpurchase-form .llpurchase-logoprice {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 20px 0; }
+        .llpurchase-detailsarea .llpurchase-details .llpurchase-form .llpurchase-logoprice p {
+          margin: 0;
+          cursor: pointer; }
+          .llpurchase-detailsarea .llpurchase-details .llpurchase-form .llpurchase-logoprice p:first-of-type {
+            font-family: "Roboto", sans-serif;
+            color: #2452a2;
+            font-size: 2em; }
+          .llpurchase-detailsarea .llpurchase-details .llpurchase-form .llpurchase-logoprice p:last-of-type {
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            text-transform: capitalize; }
+          .llpurchase-detailsarea .llpurchase-details .llpurchase-form .llpurchase-logoprice p span img {
+            width: 12px;
+            height: auto;
+            position: relative;
+            bottom: 2px;
+            right: .3em; }
+  .llpurchase-detailsarea .lldiscount-code {
+    padding: 3.5em 1em;
+    height: 80px;
+    border-bottom: 1px solid #b5b5b5; }
+    .llpurchase-detailsarea .lldiscount-code .llcoupon-text {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      color: #616161;
+      font-weight: lighter; }
+    .llpurchase-detailsarea .lldiscount-code .llcoupon-form form input {
+      text-align: center;
+      width: 12em;
+      margin-left: 10px;
+      display: inline-block; }
+      .llpurchase-detailsarea .lldiscount-code .llcoupon-form form input:focus {
+        outline: none; }
+    .llpurchase-detailsarea .lldiscount-code .llcoupon-form form input[type="text"] {
+      border: none;
+      background: #eeeeee;
+      padding: 10px 5px;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      font-style: italic;
+      color: #2452a2; }
+    .llpurchase-detailsarea .lldiscount-code .llcoupon-form form input[type="submit"] {
+      border: none;
+      padding: 14px;
+      background-color: #3F4DAF;
+      cursor: pointer;
+      display: block;
+      width: 12em;
+      font-family: "Roboto", sans-serif;
+      color: #ffffff;
+      letter-spacing: 1px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
+      .llpurchase-detailsarea .lldiscount-code .llcoupon-form form input[type="submit"]:hover {
+        background: #323d8a; }
+  .llpurchase-detailsarea .llgrand-total {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 180px; }
+    .llpurchase-detailsarea .llgrand-total .llcontinue-shoping a {
+      background: #5057bc;
+      padding: 1.5em 3em;
+      color: #ffffff;
+      font-size: 12px;
+      text-transform: none;
+      text-decoration: none; }
+      .llpurchase-detailsarea .llgrand-total .llcontinue-shoping a:hover {
+        text-decoration: none;
+        background: #3c429d; }
+    .llpurchase-detailsarea .llgrand-total .llgt-price p {
+      color: #535353;
+      font-family: "Roboto", sans-serif;
+      margin: 0; }
+      .llpurchase-detailsarea .llgrand-total .llgt-price p:first-child {
+        font-size: 14px;
+        font-weight: lighter; }
+      .llpurchase-detailsarea .llgrand-total .llgt-price p:last-child {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: capitalize; }
+  .llpurchase-detailsarea .llpaypal-brief {
+    background: #ffffff;
+    cursor: pointer; }
+    .llpurchase-detailsarea .llpaypal-brief img {
+      width: 100px;
+      height: auto; }
+    .llpurchase-detailsarea .llpaypal-brief small {
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      color: #989898; }
+    .llpurchase-detailsarea .llpaypal-brief:hover {
+      border: 1px solid blue; }
+  .llpurchase-detailsarea .llintgateway-brief {
+    background: #ffffff;
+    cursor: pointer; }
+    .llpurchase-detailsarea .llintgateway-brief img {
+      height: 30px;
+      width: auto; }
+    .llpurchase-detailsarea .llintgateway-brief small {
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      color: #989898; }
+  .llpurchase-detailsarea .lldisplay-total {
+    width: 35vw;
+    display: block;
+    background: #ffffff;
+    margin: 0 auto; }
+    .llpurchase-detailsarea .lldisplay-total p {
+      font-size: 2em;
+      color: #2452a2;
+      font-family: "Roboto", sans-serif; }
+      .llpurchase-detailsarea .lldisplay-total p span {
+        font-weight: 600; }
+    .llpurchase-detailsarea .lldisplay-total a {
+      background: #ca49d9;
+      background: -moz-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
+      background: -webkit-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
+      background: linear-gradient(to right, #ca49d9 0%, #5057bc 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca49d9', endColorstr='#5057bc',GradientType=1 );
+      width: 25vw;
+      display: block;
+      letter-spacing: 1px;
+      margin: auto;
+      padding: .8em 3em;
+      color: #ffffff;
+      font-size: 22px;
+      text-decoration: none;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
+      .llpurchase-detailsarea .lldisplay-total a:hover {
+        text-decoration: none; }
 
 /* =================================
          For Main Footer Area

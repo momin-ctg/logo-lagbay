@@ -24,6 +24,11 @@ $ff: 'Roboto', sans-serif;
 $ft: 'TrebuchetMS', sans-serif;
 $fb: 'TrebuchetMS-Bold', sans-serif;
 $bg: #eff1f5;
+$blue-colors:#2452a2;
+$gray-colors:#616161;
+body {
+  background: #eff1f5 !important;
+}
 
 /* =================================
           Main Navigation Area
@@ -31,6 +36,7 @@ $bg: #eff1f5;
 .nav-area {
   font-family: $ff;
   display: flex;
+  flex-wrap: wrap;
   padding: 15px;
   background: gray;
 
@@ -558,20 +564,23 @@ $bg: #eff1f5;
 
   .logo-shortbrief {
     table {
-      .lltr {
+      tr {
         font-family: $ff;
         display: block;
-        margin-bottom: 30px;
-        font-size: 16px;
+        //width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
         td {
+          margin-bottom: 10px;
           &:first-child {
             color: #4a4a4a;
 
           }
           &:last-child {
+            text-align: right;
+            font-size: 12px;
             font-weight: 300;
             color: #787878;
-            text-align: right;
 
           }
 
@@ -641,7 +650,7 @@ $bg: #eff1f5;
   }
 }
 
-//End Logo Details Page Design
+//End Logo Details Page Design (Page 2)
 
 /* ========================================
     For All Logo and Category Area(page 3)
@@ -791,7 +800,7 @@ $bg: #eff1f5;
         font-size: 14px;
         font-family: $ff;
         font-weight: 300;
-        color:#606060;
+        color: #606060;
         input {
           position: absolute;
           z-index: -1;
@@ -898,10 +907,267 @@ $bg: #eff1f5;
 
   }
 
-  //end for all logo thumbnail logo details
+  //End for all logo thumbnail logo details
 }
 
-//End All Logo and Category Area
+//End For All Logo and Category Area( Page 3)
+
+
+/* =================================
+     Logo Purchase Details (Page 4)
+   ================================= */
+
+.llpurchase-detailsarea {
+  padding-top: 60px;
+  background: $bg;
+  h2{
+    color:#616161;
+    font-family: $ff;
+    font-weight: 400;
+    padding-bottom: .2em;
+  }
+  .llpurchase-details {
+    background: #ffffff;
+
+
+    .llpurchase-form{
+      border-bottom: 1px solid #b5b5b5;
+
+      .llpurchase-logos{
+        padding: 20px;
+        p{
+          cursor: pointer;
+          display: inline-block;
+          margin: 0;
+          color:#616161;
+          font-family: $ff;
+          text-transform: capitalize;
+          font-size: 20px;
+          img {
+            width: 200px;
+            height: 100%;
+            display: inline-block;
+            object-fit: cover;
+            padding-right:.5em;
+          }
+        }
+      }
+
+
+      .llpurchase-logoprice{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 20px 0;
+        p{
+          margin: 0;
+          cursor: pointer;
+          &:first-of-type{
+            font-family: $ff;
+            color:$blue-colors;
+            font-size: 2em;
+          }
+          &:last-of-type{
+            font-family: $ff;
+            font-size:16px;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+          }
+
+          span{
+            img{
+              width: 12px;
+              height: auto;
+              position: relative;
+              bottom:2px;
+              right: .3em;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .lldiscount-code{
+    padding: 3.5em 1em;
+    height: 80px;
+    border-bottom: 1px solid #b5b5b5;
+    .llcoupon-text{
+      font-family: $ff;
+      font-size: 20px;
+      color: $gray-colors;
+      font-weight: lighter;
+    }
+    .llcoupon-form{
+      form{
+        input{
+          text-align: center;
+          width: 12em;
+          margin-left: 10px;
+          display: inline-block;
+          &:focus{
+            outline: none;
+          }
+        }
+        input[type="text"]{
+          border:none;
+          background: #eeeeee;
+          padding: 10px 5px;
+          font-size: 16px;
+          font-family: $ff;
+          font-style:italic;
+          color:$blue-colors;
+        }
+
+        input[type="submit"]{
+          border: none;
+          padding:14px;
+          background-color:#3F4DAF;
+          cursor:pointer;
+          display:block;
+          width:12em;
+          font-family: $ff;
+          color:#ffffff;
+          letter-spacing: 1px;
+          box-shadow: 0 0 2px rgba(0,0,0,0.3);
+          &:hover{
+            background: darken(#3F4DAF, 10%);
+          }
+        }
+
+
+      }
+    }
+
+
+
+  }
+
+
+
+  .llgrand-total{
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height:180px;
+
+    .llcontinue-shoping{
+      a{
+        background: #5057bc;
+        padding: 1.5em 3em;
+        color:#ffffff;
+        font-size: 12px;
+        text-transform: none;
+        text-decoration: none;
+        &:hover{
+          text-decoration: none;
+          background: darken(#5057bc, 10%);
+        }
+      }
+    }
+    .llgt-price{
+      p{
+        color: #535353;
+        font-family: $ff;
+        margin: 0;
+        &:first-child{
+          font-size: 14px;
+          font-weight: lighter;
+        }
+
+        &:last-child{
+          font-size: 32px;
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+
+
+
+  .llpaypal-brief{
+    background: #ffffff;
+    cursor: pointer;
+    img {
+      width:100px;
+      height:auto;
+    }
+    small{
+      font-family: $ff;
+      font-weight:normal;
+      color:#989898;
+    }
+
+    &:hover{
+    border: 1px solid blue;
+  }
+
+  }
+
+  .llintgateway-brief{
+    background: #ffffff;
+    cursor: pointer;
+    img{
+      height: 30px;
+      width: auto;
+    }
+
+    small{
+      font-family: $ff;
+      font-weight:normal;
+      color:#989898;
+    }
+  }
+
+.lldisplay-total{
+  width: 35vw;
+  display: block;
+  background: #ffffff;
+  margin: 0 auto;
+  p{
+    font-size: 2em;
+    color:#2452a2;
+    font-family: $ff;
+    span{
+      font-weight:600;
+    }
+  }
+
+    a{
+      background: #ca49d9;
+      background: -moz-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
+      background: -webkit-linear-gradient(left, #ca49d9 0%,#5057bc 100%);
+      background: linear-gradient(to right, #ca49d9 0%,#5057bc 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca49d9', endColorstr='#5057bc',GradientType=1 );
+      width: 25vw;
+      display: block;
+      letter-spacing: 1px;
+      margin: auto;
+      padding: .8em 3em;
+      color:#ffffff;
+      font-size: 22px;
+      text-decoration: none;
+      box-shadow: 0 0 2px rgba(0,0,0,0.3);
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+}
+
+
+
+}
+
+//End Logo Purchase Details (Page 4)
 
 /* =================================
          For Main Footer Area
