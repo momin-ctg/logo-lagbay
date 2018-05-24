@@ -819,24 +819,26 @@ body {
 .llhiw-area {
   background: #f8f8f8;
   padding-top: 8vh; }
-  .llhiw-area .llhiw-header h2 {
-    color: #606060;
-    font-family: "TrebuchetMS", sans-serif;
-    font-size: 40px;
-    display: inline-block;
-    position: relative; }
-    .llhiw-area .llhiw-header h2::after {
-      content: '';
-      position: absolute;
-      left: 10%;
+  .llhiw-area .llhiw-header {
+    margin-bottom: 15vh; }
+    .llhiw-area .llhiw-header h2 {
+      color: #606060;
+      font-family: "TrebuchetMS", sans-serif;
+      font-size: 40px;
       display: inline-block;
-      height: 1em;
-      width: 80%;
-      border-bottom: 2px solid;
-      border-image: linear-gradient(to right, #CA49D9, #2452A2);
-      border-image-slice: 1;
-      opacity: 0.6;
-      margin-top: 15px; }
+      position: relative; }
+      .llhiw-area .llhiw-header h2::after {
+        content: '';
+        position: absolute;
+        left: 10%;
+        display: inline-block;
+        height: 1em;
+        width: 80%;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #CA49D9, #2452A2);
+        border-image-slice: 1;
+        opacity: 0.6;
+        margin-top: 15px; }
   .llhiw-area .llhiw-text {
     height: 400px;
     display: flex;
@@ -867,6 +869,77 @@ body {
       color: #808080;
       font-weight: lighter;
       margin-left: 45px; }
+
+/* =================================
+              For Login
+   ================================= */
+.lllogin-area .lllogin-form {
+  background: #ffffff; }
+  .lllogin-area .lllogin-form form {
+    padding: 25px; }
+    .lllogin-area .lllogin-form form input {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #818181;
+      border: none;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 15px; }
+      .lllogin-area .lllogin-form form input:focus {
+        outline: none; }
+    .lllogin-area .lllogin-form form input[type="text"] {
+      border: 1px solid #9b9b9b;
+      padding: 15px 5px; }
+    .lllogin-area .lllogin-form form input[type="password"] {
+      border: 1px solid #9b9b9b;
+      padding: 15px 5px; }
+    .lllogin-area .lllogin-form form input[type="submit"] {
+      background: #ca49d9;
+      background: -moz-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
+      background: -webkit-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
+      background: linear-gradient(to right, #ca49d9 0%, #5057bc 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca49d9', endColorstr='#5057bc', GradientType=1);
+      color: #ffffff;
+      padding: 12px 5px;
+      margin-top: 15px;
+      cursor: pointer; }
+    .lllogin-area .lllogin-form form input[value="Login"] {
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: 300; }
+    .lllogin-area .lllogin-form form small {
+      display: inline-block;
+      color: #818181;
+      letter-spacing: 1px;
+      font-size: 14px;
+      text-transform: uppercase;
+      opacity: 0.57;
+      cursor: pointer; }
+    .lllogin-area .lllogin-form form a {
+      background: #3b5998;
+      display: block;
+      color: #ffffff;
+      padding: 12px 5px;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: 300;
+      cursor: pointer; }
+      .lllogin-area .lllogin-form form a img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        bottom: 2px; }
+    .lllogin-area .lllogin-form form p {
+      cursor: pointer;
+      color: #434242;
+      font-family: "Roboto", sans-serif;
+      opacity: 0.57;
+      margin: 0;
+      padding: 20px 0 0 0;
+      font-weight: 300; }
 
 /* =================================
          For Main Footer Area

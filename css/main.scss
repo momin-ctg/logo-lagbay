@@ -26,6 +26,8 @@ $fb: 'TrebuchetMS-Bold', sans-serif;
 $bg: #eff1f5;
 $blue-colors: #2452a2;
 $gray-colors: #616161;
+$gray-colors-light: #818181;
+$input-border: #9b9b9b;
 body {
   background: #eff1f5 !important;
 }
@@ -1164,6 +1166,7 @@ body {
   padding-top: 8vh;
 
   .llhiw-header {
+    margin-bottom: 15vh;
     h2 {
       color: #606060;
       font-family: $ft;
@@ -1172,7 +1175,6 @@ body {
       position: relative;
       //border-bottom:1px solid #2452a2;
       //opacity: 0.3;
-
       &::after {
         content: '';
         position: absolute;
@@ -1185,59 +1187,149 @@ body {
         border-image-slice: 1;
         opacity: 0.6;
         margin-top: 15px;
-
-      }
-    }
-  }
-
-.llhiw-text{
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  p{
-    font-family: $ft;
-    margin: 0;
-    padding-bottom: 25px;
-    font-size: 32px;
-    line-height: 1.2em;
-    color:#606060;
-
-    span{
-      &:first-child{
-        display: inline-block;
-        position: relative;
-        top:35px;
-        font-size: 80px;
-        color:#808080;
-        opacity: 0.2;
-      }
-
-      &:last-child{
-        display: block;
-        color:#606060;
-        margin-left: 45px;
       }
 
     }
   }
-small{
-  font-family: $ff;
-  font-size: 14px;
-  line-height: 2em;
-  color:#808080;
-  font-weight: lighter;
-  margin-left: 45px;
 
-}
+  .llhiw-text {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-family: $ft;
+      margin: 0;
+      padding-bottom: 25px;
+      font-size: 32px;
+      line-height: 1.2em;
+      color: #606060;
 
-}
+      span {
+        &:first-child {
+          display: inline-block;
+          position: relative;
+          top: 35px;
+          font-size: 80px;
+          color: #808080;
+          opacity: 0.2;
+        }
+
+        &:last-child {
+          display: block;
+          color: #606060;
+          margin-left: 45px;
+        }
+
+      }
+    }
+    small {
+      font-family: $ff;
+      font-size: 14px;
+      line-height: 2em;
+      color: #808080;
+      font-weight: lighter;
+      margin-left: 45px;
+
+    }
+
+  }
 
 }
 
 //End For How It Works Page
 
+/* =================================
+              For Login
+   ================================= */
 
+.lllogin-area {
+  .lllogin-form {
+    background: #ffffff;
+    form {
+      padding: 25px;
+      input {
+        font-family: $ff;
+        font-weight: 300;
+        font-size: 14px;
+        color: $gray-colors-light;
+        border: none;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      input[type="text"] {
+        border: 1px solid $input-border;
+        padding: 15px 5px;
+      }
+      input[type="password"] {
+        border: 1px solid $input-border;
+        padding: 15px 5px;
+      }
+
+      input[type="submit"] {
+        background: #ca49d9;
+        background: -moz-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
+        background: -webkit-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
+        background: linear-gradient(to right, #ca49d9 0%, #5057bc 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca49d9', endColorstr='#5057bc', GradientType=1);
+        color: #ffffff;
+        padding: 12px 5px;
+        margin-top: 15px;
+        cursor: pointer;
+      }
+
+      input[value="Login"] {
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      small {
+        display: inline-block;
+        color: $gray-colors-light;
+        letter-spacing: 1px;
+        font-size: 14px;
+        text-transform: uppercase;
+        opacity: 0.57;
+        cursor: pointer;
+      }
+
+      a {
+        background: #3b5998;
+        display: block;
+        color: #ffffff;
+        padding: 12px 5px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        img {
+          position: relative;
+          width: 20px;
+          height: 20px;
+          margin-right:10px;
+          bottom: 2px;
+        }
+      }
+      p {
+        cursor: pointer;
+        color: #434242;
+        font-family: $ff;
+        opacity: 0.57;
+        margin: 0;
+        padding: 20px 0 0 0;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+//End For Login
 
 /* =================================
          For Main Footer Area
