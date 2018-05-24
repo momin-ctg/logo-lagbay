@@ -26,7 +26,6 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     min-height: 100%;
-
 }
 
 @media (min-width: 768px) {
@@ -45,4 +44,5 @@ body {
     height: 100%;
     pointer-events: none;
     transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
 }

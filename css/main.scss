@@ -28,9 +28,7 @@ $blue-colors: #2452a2;
 $gray-colors: #616161;
 $gray-colors-light: #818181;
 $input-border: #9b9b9b;
-body {
-  background: #eff1f5 !important;
-}
+
 
 /* =================================
           Main Navigation Area
@@ -40,7 +38,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 15px;
-  background: gray;
+  position: relative;
+  z-index: 1030;
+  //background: gray;
 
   .logo {
 
@@ -159,6 +159,7 @@ body {
   }
 
   .ll-button-text {
+    margin-bottom: 50px;
     h2 {
       font-family: $fb;
       font-size: 50px;
@@ -170,65 +171,57 @@ body {
     .select {
       position: relative;
       display: inline-block;
-      margin: auto;
-      margin-bottom: 50px;
-      width: 18em;
-      height: 4.5em;
-      line-height: 3;
-      background: #ffffff;
-      overflow: hidden;
-      border-radius: .25em;
-      border: 1px solid #c8c8c8;
-      &:hover::after {
-        color: #680fac;
-      }
-      &::after {
-        content: '\25BC';
-        position: absolute;
-        color: #8e8e8e;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding: .6em 1em;
-        background: #ffffff;
-        pointer-events: none;
-        -webkit-transition: .25s all ease;
-        -o-transition: .25s all ease;
-        transition: .25s all ease;
-      }
+      margin-bottom: 15px;
+      width: 300px;
       select {
+
+        font-family: $ft;
+        font-size:20px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 20px 25px;
+        outline: 0;
+        border: 1px solid #c8c8c8;
+        border-radius: 5px !important;
+        background: #ffffff;
+        color: #8e8e8e;
+        font-weight: normal;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-        -ms-appearance: none;
-        appearance: none;
-        outline: 0;
-        box-shadow: none;
-        border: 0 !important;
-        background: #ffffff;
-        background-image: none;
-        width: 100%;
-        margin: 0 auto;
-        padding: .2em 0 0 .8em;
-        color: #8e8e8e;
-        font-size: 20px;
-        letter-spacing: 1px;
-        font-family: $ft;
-        cursor: pointer;
         &::-ms-expand {
           display: none;
         }
-        &:focus {
-          outline: none;
+        &:hover,:focus{
+          background: #ffffff;
+          outline: 0;
         }
       }
 
+      .select__arrow {
+        position: absolute;
+        top: 45%;
+        right: 15px;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        border-style: solid;
+        border-width: 8px 5px 0 5px;
+        border-color: #7b7b7b transparent transparent transparent;
+      }
+    }
+
+    .select select:hover ~ .select__arrow,
+    .select select:focus ~ .select__arrow {
+      border-top-color: darkgray;
     }
 
     //End For home page Custom select design
 
   }
 
-  //for all logo thumbnail
+  //For all logo thumbnail
   .logo-thumb {
     background: #ffffff;
     cursor: pointer;
@@ -268,7 +261,7 @@ body {
 
   }
 
-  //end for all logo thumbnail
+  //End for all logo thumbnail
 
   //For view all logo link
   .viewall-logo {
@@ -312,7 +305,7 @@ body {
     }
 
     h2 {
-      font-family: $ft;
+      font-family: $fb;
       padding-bottom: 100px;
       color: #707070;
       font-size: 50px;
@@ -332,9 +325,9 @@ body {
       max-width: 250px;
       margin: 50px auto;
       display: block;
-      background: #ca49d9; /* fallback for old browsers */
-      background: -webkit-linear-gradient(135deg, #ca49d9, #2452a2 60%); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(135deg, #ca49d9, #2452a2 60%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #CA49D9; /* fallback for old browsers */
+      background: -webkit-linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 98%); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       color: #ffffff;
       font-family: $ff;
       font-weight: 300;
@@ -360,7 +353,7 @@ body {
   .ll-selllogos {
 
     h2 {
-      font-family: $ft;
+      font-family: $fb;
       padding-bottom: 90px;
       color: #707070;
       font-size: 50px;
@@ -380,9 +373,9 @@ body {
       max-width: 250px;
       margin: 50px auto;
       display: block;
-      background: #ca49d9; /* fallback for old browsers */
-      background: -webkit-linear-gradient(135deg, #ca49d9, #2452a2 60%); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(135deg, #ca49d9, #2452a2 60%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: #CA49D9; /* fallback for old browsers */
+      background: -webkit-linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 98%); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       color: #ffffff;
       font-family: $ff;
       font-weight: 300;
@@ -991,9 +984,15 @@ body {
   }
 
   .lldiscount-code {
-    padding: 3.5em 1em;
-    height: 80px;
-    border-bottom: 1px solid #b5b5b5;
+      padding: 3.5em 1em;
+      min-height: 80px;
+      border-bottom: 1px solid #b5b5b5;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    flex-wrap: wrap;
+
     .llcoupon-text {
       font-family: $ff;
       font-size: 20px;
@@ -1119,10 +1118,8 @@ body {
   }
 
   .lldisplay-total {
-    width: 35vw;
-    display: block;
     background: #ffffff;
-    margin: 0 auto;
+
     p {
       font-size: 2em;
       color: #2452a2;
@@ -1138,7 +1135,6 @@ body {
       background: -webkit-linear-gradient(left, #ca49d9 0%, #5057bc 100%);
       background: linear-gradient(to right, #ca49d9 0%, #5057bc 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca49d9', endColorstr='#5057bc', GradientType=1);
-      width: 25vw;
       display: block;
       letter-spacing: 1px;
       margin: auto;
@@ -1388,7 +1384,7 @@ body {
         font-family: $ff;
         opacity: 0.57;
         margin: 0;
-        padding: 20px 0 0 0;
+        padding: 10px 0 0 0;
         font-weight: 300;
       }
       small{
@@ -1401,9 +1397,6 @@ body {
     }
   }
 }
-
-
-
 
 
 //End For Signup
@@ -1425,8 +1418,21 @@ body {
 }
 
 .ll-footer-about {
+  position: relative;
+
+
+  &:after {
+    content: '';
+    border-right: 1px solid #8b8b8b;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    width: 1px;
+    height: 80%;
+  }
 
   p {
+    width: 75%;
     font-family: $ff;
     font-size: 14px;
     line-height: 1.8em;
@@ -1434,24 +1440,15 @@ body {
     font-weight: 300;
   }
 
-  &:after {
-    content: '';
-    border-right: 1px solid #8b8b8b;
-    position: absolute;
-    right: 20%;
-    top: 20%;
-    width: 1px;
-    height: 80%;
-  }
-
 }
 
 .ll-footer-ourcompany, .ll-footer-faq {
+  position: relative;
   &:after {
     content: '';
     border-right: 1px solid #8b8b8b;
     position: absolute;
-    right: 20%;
+    right: 10%;
     top: 20%;
     width: 1px;
     height: 80%;
@@ -1558,6 +1555,29 @@ body {
   }
 }
 
+
+@media (max-width: 1200px){
+  .ll-footer-about {
+    position: relative;
+
+    &:after {
+      content: '';
+      border:0;
+      position: absolute;
+      right: 0;
+      top: 20%;
+      width: 0;
+      height: 0;
+    }
+
+    p{
+      width: 100%;
+    }
+  }
+
+}
+
+
 //End Footer Social
 
 /* =================================
@@ -1571,6 +1591,7 @@ body {
 
   .ll-paymentlogo {
     img {
+      margin: 0;
       width: auto;
       height: 30px;
     }
@@ -1578,6 +1599,7 @@ body {
 
   .ll-copyright {
     p {
+      margin:0;
       color: #9b9b9b;
       font-family: $ff;
       font-size: 14px;
@@ -1588,16 +1610,6 @@ body {
 }
 
 //End Footer Copyright
-
-
-
-
-
-
-
-
-
-
 
 
 
