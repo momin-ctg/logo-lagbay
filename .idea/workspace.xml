@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30de2bdb-a384-4455-8ebc-b0b3db38eed8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/images/social/facebook-app-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/howit-works.html" beforeDir="false" afterPath="$PROJECT_DIR$/howit-works.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,11 +35,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="183">
-                  <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+                <state relative-caret-position="336">
+                  <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+                  <folding>
+                    <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/signup.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="672">
+                  <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -57,13 +66,14 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="618">
-                  <caret line="1315" column="21" selection-start-line="1315" selection-start-column="21" selection-end-line="1315" selection-end-column="21" />
+                <state relative-caret-position="638">
+                  <caret line="1396" column="21" lean-forward="true" selection-start-line="1396" selection-start-column="21" selection-end-line="1396" selection-end-column="21" />
                   <folding>
                     <element signature="e#23857#24993#0" />
                     <element signature="e#24716#25003#0" />
                     <element signature="e#24737#24893#0" />
                     <element signature="e#24913#24996#0" />
+                    <element signature="e#25468#27415#0" />
                   </folding>
                 </state>
               </provider>
@@ -137,8 +147,8 @@
         <option value="$PROJECT_DIR$/home-logodetails.html" />
         <option value="$PROJECT_DIR$/logopurchase-details.html" />
         <option value="$PROJECT_DIR$/howit-works.html" />
-        <option value="$PROJECT_DIR$/signup.html" />
         <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/signup.html" />
         <option value="$PROJECT_DIR$/css/main.scss" />
       </list>
     </option>
@@ -169,17 +179,6 @@
             <path>
               <item name="logolagbay" type="b2602c69:ProjectViewProjectNode" />
               <item name="logolagbay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="logolagbay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logolagbay" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="logolagbay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="logolagbay" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,12 +262,12 @@
       <workItem from="1526870419331" duration="20196000" />
       <workItem from="1526955362407" duration="21570000" />
       <workItem from="1527041329591" duration="19658000" />
-      <workItem from="1527128306852" duration="7258000" />
+      <workItem from="1527128306852" duration="9198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150252000" />
+    <option name="totallyTimeSpent" value="152192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2304" height="1269" extended-state="0" />
@@ -354,6 +353,7 @@
             <element signature="e#24716#25003#0" />
             <element signature="e#24737#24893#0" />
             <element signature="e#24913#24996#0" />
+            <element signature="e#25468#27415#0" />
           </folding>
         </state>
       </provider>
@@ -622,20 +622,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/social/facebook-app-logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+        <state relative-caret-position="336">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -644,13 +647,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="1315" column="21" selection-start-line="1315" selection-start-column="21" selection-end-line="1315" selection-end-column="21" />
+        <state relative-caret-position="638">
+          <caret line="1396" column="21" lean-forward="true" selection-start-line="1396" selection-start-column="21" selection-end-line="1396" selection-end-column="21" />
           <folding>
             <element signature="e#23857#24993#0" />
             <element signature="e#24716#25003#0" />
             <element signature="e#24737#24893#0" />
             <element signature="e#24913#24996#0" />
+            <element signature="e#25468#27415#0" />
           </folding>
         </state>
       </provider>

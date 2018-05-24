@@ -942,6 +942,58 @@ body {
       font-weight: 300; }
 
 /* =================================
+              For Sign up
+   ================================= */
+.llsignup-area .llsignup-form {
+  background: #ffffff; }
+  .llsignup-area .llsignup-form form {
+    padding: 25px; }
+    .llsignup-area .llsignup-form form input {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #818181;
+      border: none;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 15px; }
+      .llsignup-area .llsignup-form form input:focus {
+        outline: none; }
+    .llsignup-area .llsignup-form form input[type="text"], .llsignup-area .llsignup-form form input[type="email"] {
+      border: 1px solid #9b9b9b;
+      padding: 15px 5px; }
+    .llsignup-area .llsignup-form form input[type="password"] {
+      border: 1px solid #9b9b9b;
+      padding: 15px 5px; }
+    .llsignup-area .llsignup-form form input[type="submit"] {
+      background: #ca49d9;
+      background: -moz-linear-gradient(left, #ca49d9 0%, #1771A8 100%);
+      background: -webkit-linear-gradient(left, #ca49d9 0%, #1771A8 100%);
+      background: linear-gradient(to right, #ca49d9 0%, #1771A8 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca49d9', endColorstr='#1771A8 ', GradientType=1);
+      color: #ffffff;
+      padding: 12px 5px;
+      cursor: pointer; }
+    .llsignup-area .llsignup-form form input[value="Sign up"] {
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: 300; }
+    .llsignup-area .llsignup-form form p {
+      cursor: pointer;
+      color: #818181;
+      font-family: "Roboto", sans-serif;
+      opacity: 0.57;
+      margin: 0;
+      padding: 20px 0 0 0;
+      font-weight: 300; }
+    .llsignup-area .llsignup-form form small {
+      color: #434242;
+      opacity: 0.57;
+      font-size: 16px;
+      margin-top: 10px;
+      display: block; }
+
+/* =================================
          For Main Footer Area
    ================================= */
 .mainfooter-area {

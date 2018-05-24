@@ -1332,6 +1332,83 @@ body {
 //End For Login
 
 /* =================================
+              For Sign up
+   ================================= */
+
+
+
+.llsignup-area {
+  .llsignup-form {
+    background: #ffffff;
+    form {
+      padding: 25px;
+      input {
+        font-family: $ff;
+        font-weight: 300;
+        font-size: 14px;
+        color: $gray-colors-light;
+        border: none;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      input[type="text"],input[type="email"] {
+        border: 1px solid $input-border;
+        padding: 15px 5px;
+      }
+      input[type="password"] {
+        border: 1px solid $input-border;
+        padding: 15px 5px;
+      }
+
+      input[type="submit"] {
+        background: #ca49d9;
+        background: -moz-linear-gradient(left, #ca49d9 0%, #1771A8 100%);
+        background: -webkit-linear-gradient(left, #ca49d9 0%, #1771A8  100%);
+        background: linear-gradient(to right, #ca49d9 0%, #1771A8  100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca49d9', endColorstr='#1771A8 ', GradientType=1);
+        color: #ffffff;
+        padding: 12px 5px;
+        cursor: pointer;
+      }
+
+      input[value="Sign up"] {
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      p {
+        cursor: pointer;
+        color: #818181;
+        font-family: $ff;
+        opacity: 0.57;
+        margin: 0;
+        padding: 20px 0 0 0;
+        font-weight: 300;
+      }
+      small{
+        color:#434242;
+        opacity: 0.57;
+        font-size: 16px;
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
+
+//End For Signup
+
+/* =================================
          For Main Footer Area
    ================================= */
 .mainfooter-area {
