@@ -13,6 +13,7 @@ body {
  *
  */
 .header{
+    width: 100%;
     overflow: hidden;
     background: #0c1476; /* fallback for old browsers */
     background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%); /* Chrome 10-25, Safari 5.1-6 */
@@ -29,11 +30,11 @@ body {
     min-height: 100%;
 }
 
-@media (min-width: 768px) {
-    .header {
-        min-width: 1000px;
-    }
-}
+/*@media (min-width: 768px) {*/
+    /*.header {*/
+        /*min-width: 1000px;*/
+    /*}*/
+/*}*/
 
 
 .lamp-anim {

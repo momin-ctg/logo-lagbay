@@ -1,0 +1,76 @@
+.lld-titlearea {
+  background: #0c1476;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(135deg, #0c1476, #680fac 60%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .lld-titlearea .lld-titlepart {
+    display: flex;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .lld-titlearea .lld-titlepart .lld-title h3 {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+      color: #ffffff;
+      font-weight: 300; }
+
+.lld-breadcrumbs ul {
+  margin: 0;
+  padding: 0; }
+.lld-breadcrumbs .breadcrumbs {
+  padding: 0 1em;
+  list-style: none; }
+  .lld-breadcrumbs .breadcrumbs li {
+    display: inline; }
+    .lld-breadcrumbs .breadcrumbs li a {
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 300;
+      color: #fcfcfc;
+      text-decoration: none; }
+      .lld-breadcrumbs .breadcrumbs li a:hover {
+        color: #ffffff;
+        text-decoration: underline; }
+
+.breadcrumbs li + li:before {
+  padding: 0 2px;
+  color: #fcfcfc;
+  content: "/\00a0"; }
+
+.lld-navarea {
+  margin-bottom: 200px;
+  background: #ffffff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); }
+  .lld-navarea .lld-navigation {
+    height: 70px;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden; }
+    .lld-navarea .lld-navigation a {
+      text-transform: capitalize;
+      transition: 0.4s;
+      margin-right: 30px;
+      flex: 0 0 auto;
+      padding: 20px 0;
+      align-self: stretch;
+      position: relative;
+      color: #707070;
+      font-family: "Roboto", sans-serif;
+      text-decoration: none;
+      font-size: 16px;
+      align-items: center;
+      letter-spacing: 1px; }
+      .lld-navarea .lld-navigation a:hover {
+        border-bottom: 4px solid rebeccapurple; }
+
+/*# sourceMappingURL=dashboard.css.map */

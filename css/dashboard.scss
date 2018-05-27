@@ -1,0 +1,111 @@
+//Common Style For Dashboard
+
+$ff: 'Roboto', sans-serif;
+$ft: 'TrebuchetMS', sans-serif;
+$fb: 'TrebuchetMS-Bold', sans-serif;
+$bg: #eff1f5;
+$blue-colors: #2452a2;
+$gray-colors: #616161;
+$gray-colors-light: #818181;
+$input-border: #9b9b9b;
+
+.lld-titlearea{
+  background: #0c1476; /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(135deg, #0c1476, #680fac 60%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.lld-titlepart{
+  display: flex;
+  height:90px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .lld-title{
+    h3{
+      margin: 0;
+      padding: 0;
+      font-family: $ff;
+      color:#ffffff;
+      font-weight: 300;
+    }
+  }
+}
+
+}
+
+
+.lld-breadcrumbs{
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  .breadcrumbs {
+    padding: 0 1em;
+    list-style: none;
+    li {
+      display: inline;
+      a {
+        font-family: $ff;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 300;
+        color: #fcfcfc;
+        text-decoration: none;
+        &:hover {
+          color: #ffffff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.breadcrumbs li+li:before {
+  padding: 0 2px ;
+  color: #fcfcfc;
+  content: "/\00a0";
+}
+
+.lld-navarea{
+  margin-bottom: 200px;
+  background: #ffffff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  .lld-navigation{
+    height:70px;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x:auto;
+    overflow-y: hidden;
+
+
+    a{
+      text-transform: capitalize;
+      transition:0.4s;
+      margin-right: 30px;
+      flex: 0 0 auto;
+      padding: 20px 0;
+      align-self: stretch;
+      position: relative;
+      color:#707070;
+      font-family: $ff;
+      text-decoration: none;
+      font-size: 16px;
+      align-items: center;
+      letter-spacing: 1px;
+      &:hover{
+        //height: 100%;
+        //content:"";
+        //position: absolute;
+        //width: 100%;
+        //left: 0;
+        //bottom: 0;
+        border-bottom: 4px solid rebeccapurple;
+      }
+    }
+  }
+}
+
+//End Common Style For Dashboard
