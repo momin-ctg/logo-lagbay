@@ -15,7 +15,7 @@
 <body>
 
 <!--lamp and lava Animation by jquery-->
-<canvas id="lamp-anim" class="lamp-anim"></canvas>
+<!--<canvas id="lamp-anim" class="lamp-anim"></canvas>-->
 <!--End lamp and lava Animation by jquery-->
 
 <!-- ===================================
@@ -40,13 +40,16 @@
             <a href=""><img src="images/cart.svg" alt=""></a>
             <a href="">Login/ Sign Up</a>
             <a class="btn-submit" href="">Submit logo</a>
+            <span class="m-nav" onclick="openNav()">
+                <img src="images/menu.svg" alt=""></span>
         </div>
     </div>
 
-    <!--home page header text-->
+    <!--Home page header text-->
     <div class="header-text text-center">
-        <h2 class="h2">Logo is the secret to great business</h2>
-        <p>   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+        <h2>Logo is the secret to great business</h2>
+        <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem</p>
 
         <p> aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae</p>
 
@@ -58,9 +61,31 @@
     </div>
     <!--End home page header text-->
 
+    <!--Responsive Mobile Navigation-->
+
+    <div id="myNav" class="mnav-overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Logos</a>
+            <a href="#">How It Works</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <!--End Responsive Mobile Navigation-->
+
 </div>
 
 <!--End Main Navigation Area-->
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0";
+    }
+</script>
 
 
 <!-- ===================================
@@ -241,8 +266,9 @@
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ducimus, odit tempora ullam
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ipsam.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quas!
-                        </p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ipsam. Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit. Placeat, quas!
+                    </p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-12">

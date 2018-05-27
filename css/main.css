@@ -20,7 +20,6 @@
 .nav-area {
   font-family: "Roboto", sans-serif;
   display: flex;
-  flex-wrap: wrap;
   padding: 15px;
   position: relative;
   z-index: 1030; }
@@ -29,7 +28,8 @@
     height: 40px; }
 
 .center-nav {
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto; }
   .center-nav a {
     color: #ffffff;
     text-decoration: none;
@@ -46,6 +46,8 @@
   padding: 10px;
   color: #787878;
   text-decoration: none; }
+  .right-nav .btn-submit:hover {
+    color: #ffffff !important; }
 .right-nav img {
   width: 20px; }
 .right-nav a {
@@ -58,6 +60,106 @@
 .right-nav a:not(:last-child) {
   margin-right: 2em; }
 
+.m-nav {
+  cursor: pointer;
+  width: 40px;
+  height: auto;
+  color: #ffffff; }
+
+.mnav-overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 2090;
+  top: 0;
+  left: 0;
+  background: #0c1476;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(135deg, #0c1476, #680fac 60%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-y: hidden;
+  transition: 0.5s; }
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
+.mnav-overlay a {
+  font-family: "Roboto", sans-serif;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s; }
+
+.mnav-overlay a:hover, .mnav-overlay a:focus {
+  color: #f1f1f1;
+  text-decoration: none; }
+
+.mnav-overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px; }
+  .mnav-overlay .closebtn:hover {
+    text-decoration: none; }
+
+@media screen and (max-height: 450px) {
+  .mnav-overlay {
+    overflow-y: auto; }
+
+  .mnav-overlay a {
+    font-size: 20px; }
+
+  .mnav-overlay .closebtn {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    top: 15px;
+    right: 15px;
+    text-decoration: none; } }
+@media (min-width: 768px) {
+  .m-nav {
+    display: none; } }
+@media (max-width: 768px) {
+  .nav-area .logo a {
+    margin-right: 5px; }
+    .nav-area .logo a img {
+      width: 80px;
+      height: auto; }
+  .nav-area .right-nav {
+    margin-left: auto; }
+    .nav-area .right-nav .btn-submit {
+      padding: 5px; }
+    .nav-area .right-nav img {
+      width: 16px;
+      height: auto; }
+    .nav-area .right-nav a {
+      font-size: 11px; }
+      .nav-area .right-nav a:not(:last-child) {
+        margin-right: .8em; }
+
+  .center-nav {
+    display: none; } }
+@media (max-width: 1200px) {
+  .center-nav {
+    margin-right: auto;
+    margin-left: auto; }
+    .center-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif; }
+      .center-nav a:hover {
+        text-decoration: none;
+        color: #ffffff; }
+    .center-nav a:not(:last-child) {
+      margin-right: 1em; } }
 /* =================================
              Header Text Area
    ================================= */
@@ -94,6 +196,11 @@
       height: auto;
       padding-left: 5px; }
 
+@media (max-width: 768px) {
+  .header-text h2 {
+    padding-bottom: 15px; }
+  .header-text p:last-of-type {
+    display: none; } }
 /* =================================
     For Logo category text, dropdown
        button and logo thumbnail
@@ -1050,7 +1157,7 @@
   font-weight: 300; }
 
 .ll-subscription {
-  width: 300px;
+  max-width: 300px;
   display: block; }
 
 .ll-subscription form {
@@ -1098,12 +1205,13 @@
 
 .ll-socialmedia {
   margin-top: 30px;
-  width: 300px;
-  display: inline-flex;
+  max-width: 300px;
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between; }
   .ll-socialmedia img {
-    width: 42px;
+    width: 40px;
     height: auto; }
 
 @media (max-width: 1200px) {
