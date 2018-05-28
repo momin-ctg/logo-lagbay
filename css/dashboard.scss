@@ -9,32 +9,37 @@ $gray-colors: #616161;
 $gray-colors-light: #818181;
 $input-border: #9b9b9b;
 
-.lld-titlearea{
+$d-bg: #F8F8F8;
+$bg-white: #ffffff;
+$d-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+
+//Start Common Style For Dashboard
+
+.lld-titlearea {
   background: #0c1476; /* fallback for old browsers */
   background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(135deg, #0c1476, #680fac 60%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-.lld-titlepart{
-  display: flex;
-  height:90px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  .lld-title{
-    h3{
-      margin: 0;
-      padding: 0;
-      font-family: $ff;
-      color:#ffffff;
-      font-weight: 300;
+  .lld-titlepart {
+    display: flex;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .lld-title {
+      h3 {
+        margin: 0;
+        padding: 0;
+        font-family: $ff;
+        color: #ffffff;
+        font-weight: 300;
+      }
     }
   }
-}
 
 }
 
-
-.lld-breadcrumbs{
-  ul{
+.lld-breadcrumbs {
+  ul {
     margin: 0;
     padding: 0;
   }
@@ -59,43 +64,42 @@ $input-border: #9b9b9b;
   }
 }
 
-.breadcrumbs li+li:before {
-  padding: 0 2px ;
+.breadcrumbs li + li:before {
+  padding: 0 2px;
   color: #fcfcfc;
   content: "/\00a0";
 }
 
-.lld-navarea{
-  margin-bottom: 200px;
+.lld-navarea {
+  //margin-bottom: 200px;
   background: #ffffff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-  .lld-navigation{
-    height:70px;
+  .lld-navigation {
+    height: 70px;
     display: flex;
     -webkit-overflow-scrolling: touch;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    overflow-x:auto;
+    overflow-x: auto;
     overflow-y: hidden;
 
-
-    a{
+    a {
       text-transform: capitalize;
-      transition:0.4s;
+      transition: 0.4s;
       margin-right: 30px;
       flex: 0 0 auto;
       padding: 20px 0;
       align-self: stretch;
       position: relative;
-      color:#707070;
+      color: #707070;
       font-family: $ff;
       text-decoration: none;
       font-size: 16px;
       align-items: center;
       letter-spacing: 1px;
-      &:hover{
+      &:hover {
         //height: 100%;
         //content:"";
         //position: absolute;
@@ -108,4 +112,365 @@ $input-border: #9b9b9b;
   }
 }
 
+.lldashboard-bg {
+  background: $d-bg;
+}
+
 //End Common Style For Dashboard
+
+/* =================================
+      For Dashboard Overview
+   ================================= */
+
+.lld-overviewarea {
+  padding-top: 60px;
+}
+
+.ll-totallogos {
+  background: $bg-white;
+  display: flex;
+  padding: 25px;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  span {
+    font-family: $ff;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #919191;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    small {
+      display: block;
+      margin: 0;
+      padding: 0;
+      color: #AB9DBA;
+      font-size: 18px;
+      line-height: 1;
+    }
+    &:last-child {
+      img {
+        width: auto;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.ll-monthsale {
+  background: $bg-white;
+  display: flex;
+  padding: 25px;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  span {
+    font-family: $ff;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #919191;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    sub {
+      font-family: $ff;
+      font-size: 14px;
+      font-weight: 300;
+      position: relative;
+      bottom: 2px;
+    }
+    small {
+      display: block;
+      margin: 0;
+      padding: 0;
+      color: #AB9DBA;
+      font-size: 18px;
+      line-height: 1;
+    }
+    &:last-child {
+      img {
+        width: auto;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.ll-totalsale {
+  background: $bg-white;
+  display: flex;
+  padding: 25px;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  span {
+    font-family: $ff;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #919191;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    sub {
+      font-family: $ff;
+      font-size: 14px;
+      font-weight: 300;
+      position: relative;
+      bottom: 2px;
+    }
+    small {
+      display: block;
+      margin: 0;
+      padding: 0;
+      color: #AB9DBA;
+      font-size: 18px;
+      line-height: 1;
+    }
+    &:last-child {
+      img {
+        width: 50px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.ll-lifetimesale {
+  background: $bg-white;
+  display: flex;
+  padding: 25px;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  span {
+    font-family: $ff;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #919191;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    sub {
+      font-family: $ff;
+      font-size: 14px;
+      font-weight: 300;
+      position: relative;
+      bottom: 2px;
+    }
+    small {
+      display: block;
+      margin: 0;
+      padding: 0;
+      color: #AB9DBA;
+      font-size: 18px;
+      line-height: 1;
+    }
+    &:last-child {
+      img {
+        width: auto;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.lld-salersbuyersarea {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.lld-recentsales {
+  background: $bg-white;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+
+  .lld-recentsales-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+  h4 {
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-size: 28px;
+    color: #878787;
+    font-family: $ff;
+    font-weight: 400;
+  }
+}
+
+.lld-rstable-header {
+  display: flex;
+  flex-direction: row;
+  font-family: $ff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #6a6a6a;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #e3e3e3;
+  margin: 0 25px;
+}
+
+.lld-rstablemain {
+  padding: 0 25px 55px 25px;
+  .lld-rstable-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d6d6d6;
+    height: 125px;
+    .lld-rsimage {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 140px;
+        height: auto;
+        object-fit: cover;
+        border: 1px solid #e3e3e3;
+      }
+
+      .lldimage-caption {
+        span {
+          display: block;
+          font-family: $ff;
+          font-size: 28px;
+          color: #6a6a6a;
+          margin-left: .8em;
+          &:last-child {
+            position: relative;
+            bottom: 5px;
+            color: #a2a2a2;
+            font-size: 10px;
+            padding-left: 1.5em;
+          }
+        }
+
+      }
+
+    }
+
+    .lld-rsprice {
+      font-family: $ff;
+      color: #6a6a6a;
+      font-size: 20px;
+      span {
+        font-weight: lighter;
+        sub {
+          font-size: 11px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .lld-rstable-details {
+    min-height: 160px;
+  }
+}
+
+.lld-recentbuyers {
+  background: $bg-white;
+  padding-bottom: 20px;
+  .lld-recentbuyers-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+  h4 {
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-size: 28px;
+    color: #878787;
+    font-family: $ff;
+    font-weight: 400;
+
+  }
+  .lld-rbtable-details {
+    margin: 0 25px;
+    padding: 35px 0;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #f3f3f3;
+
+    .lld-rbimage {
+      p {
+        margin: 0;
+        font-size: 14px;
+        font-family: $ff;
+        font-weight: bold;
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 10px;
+          border: 1px solid #707070;
+        }
+      }
+    }
+
+    .lld-rbprice {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-family: $ff;
+        font-weight: 300;
+        font-size: 16px;
+        sub {
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+}
+
+/*End Dashboard Overview*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
