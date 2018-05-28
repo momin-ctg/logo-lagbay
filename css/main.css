@@ -476,12 +476,13 @@
     margin-bottom: 10px;
     color: #787878; }
   .lldetails-sidebararea .lldetails-sidebar .llbuyer-img {
-    display: inline;
-    width: 32px;
-    height: 32px; }
+    display: inline; }
     .lldetails-sidebararea .lldetails-sidebar .llbuyer-img img {
+      border-radius: 5px;
+      width: 32px;
+      height: 32px;
       display: inline-block;
-      padding-right: 5px;
+      margin-right: 5px;
       object-fit: cover; }
   .lldetails-sidebararea .lldetails-price h3 {
     color: #2452a2;
