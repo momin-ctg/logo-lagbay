@@ -449,6 +449,118 @@ $d-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 
 /*End Dashboard Overview*/
 
+/* =================================
+       For Dashboard Purchase Area
+   ================================= */
+.lld-purchasearea {
+  padding: 60px 0;
+}
+
+.lld-purchasemain {
+  background: $bg-white;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.lld-purchaserow {
+  padding-left: 25px;
+  min-height: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .lld-purchaselogo {
+    img {
+      cursor: pointer;
+      width: 160px;
+      height: 100px;
+      object-fit: cover;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .lld-purchasecaption {
+    span {
+      color: $gray-colors;
+      font-family: $ff;
+      font-weight: 300;
+      font-size: 18px;
+      text-transform: capitalize;
+
+    }
+    h3 {
+      color: $blue-colors;
+      font-family: $ff;
+      font-size: 32px;
+      font-weight: 400;
+    }
+  }
+}
+
+.lld-purchasebtn {
+  padding-right: 25px;
+  min-height: 140px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .lld-purchasedownload {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 300;
+    width: 120px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: #CA49D9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 98%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .lld-purchaseinvoice {
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #c5c5c5;
+    color: #7a7a7a;
+    padding: 5px;
+  }
+}
+
+//Only for Edit button
+.lld-purchasebtn {
+  padding-right: 25px;
+  min-height: 140px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .lld-purchaseedit {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 300;
+    width: 120px;
+    padding: 5px;
+    background: #CA49D9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 98%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}
+
+//End only for edit button
+
+
+//End Dashboard Purchase Area
 
 
 
