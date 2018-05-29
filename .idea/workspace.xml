@@ -33,8 +33,8 @@
           <file leaf-file-name="withdrawals.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/dashboard/withdrawals.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="474">
-                  <caret line="135" column="57" lean-forward="true" selection-start-line="135" selection-start-column="57" selection-end-line="135" selection-end-column="57" />
+                <state relative-caret-position="300">
+                  <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -58,8 +58,8 @@
           <file leaf-file-name="dashboard.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/dashboard.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-682">
-                  <caret line="796" column="20" lean-forward="true" selection-start-line="796" selection-start-column="20" selection-end-line="796" selection-end-column="20" />
+                <state relative-caret-position="391">
+                  <caret line="895" column="10" lean-forward="true" selection-start-line="895" selection-start-column="10" selection-end-line="895" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -80,8 +80,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lamp</find>
-      <find>affix</find>
       <find>header</find>
       <find>lam</find>
       <find>lamp-anim</find>
@@ -110,6 +108,8 @@
       <find>6a6a6</find>
       <find>lld-purchaselogo</find>
       <find>lld-purchasedownload</find>
+      <find>50px</find>
+      <find>50px23p</find>
     </findStrings>
     <replaceStrings>
       <replace>lld-purchaseedit</replace>
@@ -156,8 +156,8 @@
         <option value="$PROJECT_DIR$/dashboard/dashboard-managelogos.html" />
         <option value="$PROJECT_DIR$/dashboard/dashboard-purchase.html" />
         <option value="$PROJECT_DIR$/dashboard/dashboard-settings.html" />
-        <option value="$PROJECT_DIR$/dashboard/withdrawals.html" />
         <option value="$PROJECT_DIR$/css/dashboard.scss" />
+        <option value="$PROJECT_DIR$/dashboard/withdrawals.html" />
       </list>
     </option>
   </component>
@@ -288,12 +288,12 @@
       <workItem from="1527128306852" duration="19321000" />
       <workItem from="1527386848139" duration="17014000" />
       <workItem from="1527473128212" duration="22418000" />
-      <workItem from="1527560457282" duration="15265000" />
+      <workItem from="1527560457282" duration="16895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217012000" />
+    <option name="totallyTimeSpent" value="218642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2304" height="1269" extended-state="6" />
@@ -661,20 +661,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/withdrawals.html">
+    <entry file="file://$PROJECT_DIR$/css/dashboard.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="135" column="57" lean-forward="true" selection-start-line="135" selection-start-column="57" selection-end-line="135" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="895" column="10" lean-forward="true" selection-start-line="895" selection-start-column="10" selection-end-line="895" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/dashboard.scss">
+    <entry file="file://$PROJECT_DIR$/dashboard/withdrawals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-682">
-          <caret line="796" column="20" lean-forward="true" selection-start-line="796" selection-start-column="20" selection-end-line="796" selection-end-column="20" />
+        <state relative-caret-position="300">
+          <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
