@@ -559,8 +559,125 @@ $d-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 
 //End only for edit button
 
-
 //End Dashboard Purchase Area
+
+/* =================================
+      For Dashboard Settings Area
+   ================================= */
+.lld-settingsarea {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.bg-white {
+  background: #ffffff;
+  padding: 25px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.lld-astitle {
+  margin: -25px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  h3 {
+    margin-left: 25px;
+    padding: 25px 0;
+    color: #7e7e7e;
+    font-family: $ff;
+    font-size: 26px;
+    display: block;
+  }
+}
+
+.lld-profileimgarea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  .lld-profileimg {
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .lld-profilecaption {
+    h4 {
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+      font-family: $ff;
+      color: #929292;
+    }
+    p {
+      font-size: 14px;
+      font-weight: lighter;
+      margin: 0;
+      font-family: $ff;
+      color: #929292;
+    }
+  }
+}
+
+#lld-settingsform {
+  input[type="text"] {
+    &:focus {
+      outline: 0;
+    }
+  }
+  textarea {
+    font-family: $ff;
+    background: #efefef;
+    border: none;
+    border-radius: 2px;
+  }
+  input {
+    font-family: $ff;
+    color:$gray-colors-light;
+    background: #efefef;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+  label {
+    color: #929292;
+    font-family: $ff;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-bottom: 5px;
+  }
+}
+
+.lld-savebtn {
+  margin-top: 30px;
+
+  a {
+    text-decoration: none;
+    background: #E3E6EE;
+    display: block;
+    color: #8C909C;
+    font-family: $ff;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    &:hover {
+      background: darken(#E3E6EE, 15%);
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+}
+
+/*End Dashboard Settings Area*/
 
 
 

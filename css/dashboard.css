@@ -430,4 +430,95 @@
     background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
+/* =================================
+      For Dashboard Settings Area
+   ================================= */
+.lld-settingsarea {
+  padding-top: 60px;
+  padding-bottom: 40px; }
+
+.bg-white {
+  background: #ffffff;
+  padding: 25px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+.lld-astitle {
+  margin: -25px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; }
+  .lld-astitle h3 {
+    margin-left: 25px;
+    padding: 25px 0;
+    color: #7e7e7e;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    display: block; }
+
+.lld-profileimgarea {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px; }
+  .lld-profileimgarea .lld-profileimg img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    cursor: pointer; }
+  .lld-profileimgarea .lld-profilecaption h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #929292; }
+  .lld-profileimgarea .lld-profilecaption p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #929292; }
+
+#lld-settingsform input[type="text"]:focus {
+  outline: 0; }
+#lld-settingsform textarea {
+  font-family: "Roboto", sans-serif;
+  background: #efefef;
+  border: none;
+  border-radius: 2px; }
+#lld-settingsform input {
+  font-family: "Roboto", sans-serif;
+  color: #818181;
+  background: #efefef;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 25px; }
+#lld-settingsform label {
+  color: #929292;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  padding-bottom: 5px; }
+
+.lld-savebtn {
+  margin-top: 30px; }
+  .lld-savebtn a {
+    text-decoration: none;
+    background: #E3E6EE;
+    display: block;
+    color: #8C909C;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 2px; }
+    .lld-savebtn a:hover {
+      background: #b3bcd1;
+      text-decoration: none;
+      color: #ffffff; }
+
+/*End Dashboard Settings Area*/
+
 /*# sourceMappingURL=dashboard.css.map */
