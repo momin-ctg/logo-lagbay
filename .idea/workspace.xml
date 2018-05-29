@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30de2bdb-a384-4455-8ebc-b0b3db38eed8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/dashboard/dashboard-submitlogo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/dashboard.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/dashboard.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/dashboard.scss" afterDir="false" />
@@ -30,13 +32,39 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="withdrawals.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="withdrawals.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dashboard/withdrawals.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
+                <state relative-caret-position="388">
+                  <caret line="147" column="42" selection-start-line="147" selection-start-column="42" selection-end-line="147" selection-end-column="42" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dashboard-submitlogo.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/dashboard/dashboard-submitlogo.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="583">
+                  <caret line="223" column="77" selection-start-line="223" selection-start-column="77" selection-end-line="223" selection-end-column="77" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#4338#4345#1" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dashboard-settings.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/dashboard/dashboard-settings.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="406">
+                  <caret line="157" column="22" lean-forward="true" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
                   </folding>
                 </state>
               </provider>
@@ -58,8 +86,8 @@
           <file leaf-file-name="dashboard.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/dashboard.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="895" column="10" lean-forward="true" selection-start-line="895" selection-start-column="10" selection-end-line="895" selection-end-column="10" />
+                <state relative-caret-position="555">
+                  <caret line="940" selection-start-line="940" selection-end-line="940" />
                 </state>
               </provider>
             </entry>
@@ -80,7 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header</find>
       <find>lam</find>
       <find>lamp-anim</find>
       <find>ll-cat</find>
@@ -110,6 +137,7 @@
       <find>lld-purchasedownload</find>
       <find>50px</find>
       <find>50px23p</find>
+      <find>white</find>
     </findStrings>
     <replaceStrings>
       <replace>lld-purchaseedit</replace>
@@ -156,8 +184,9 @@
         <option value="$PROJECT_DIR$/dashboard/dashboard-managelogos.html" />
         <option value="$PROJECT_DIR$/dashboard/dashboard-purchase.html" />
         <option value="$PROJECT_DIR$/dashboard/dashboard-settings.html" />
-        <option value="$PROJECT_DIR$/css/dashboard.scss" />
         <option value="$PROJECT_DIR$/dashboard/withdrawals.html" />
+        <option value="$PROJECT_DIR$/css/dashboard.scss" />
+        <option value="$PROJECT_DIR$/dashboard/dashboard-submitlogo.html" />
       </list>
     </option>
   </component>
@@ -288,18 +317,18 @@
       <workItem from="1527128306852" duration="19321000" />
       <workItem from="1527386848139" duration="17014000" />
       <workItem from="1527473128212" duration="22418000" />
-      <workItem from="1527560457282" duration="16895000" />
+      <workItem from="1527560457282" duration="21164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218642000" />
+    <option name="totallyTimeSpent" value="222911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2304" height="1269" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.110381074" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.110381074" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5037531" side_tool="true" weight="0.39878893" />
@@ -370,17 +399,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard/dashboard-purchase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4228">
-          <caret line="151" column="71" lean-forward="true" selection-start-line="151" selection-start-column="71" selection-end-line="151" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/dashboard-managelogos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5628">
@@ -644,16 +662,6 @@
     <entry file="file://$PROJECT_DIR$/images/dashboard/co-logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/dashboard-settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="123" column="97" lean-forward="true" selection-start-line="123" selection-start-column="97" selection-end-line="123" selection-end-column="97" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
@@ -663,17 +671,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/dashboard.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="895" column="10" lean-forward="true" selection-start-line="895" selection-start-column="10" selection-end-line="895" selection-end-column="10" />
+        <state relative-caret-position="555">
+          <caret line="940" selection-start-line="940" selection-end-line="940" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/withdrawals.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
+        <state relative-caret-position="388">
+          <caret line="147" column="42" selection-start-line="147" selection-start-column="42" selection-end-line="147" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/dashboard-settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="157" column="22" lean-forward="true" selection-start-line="157" selection-start-column="22" selection-end-line="157" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#form#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard/dashboard-submitlogo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="223" column="77" selection-start-line="223" selection-start-column="77" selection-end-line="223" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4338#4345#1" expanded="true" />
           </folding>
         </state>
       </provider>
