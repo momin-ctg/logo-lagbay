@@ -29,7 +29,6 @@ $gray-colors: #616161;
 $gray-colors-light: #818181;
 $input-border: #9b9b9b;
 
-
 /* =================================
           Main Navigation Area
    ================================= */
@@ -82,7 +81,7 @@ $input-border: #9b9b9b;
     border-radius: 2px;
     color: #787878;
     text-decoration: none;
-    &:hover{
+    &:hover {
       color: $gray-colors;
     }
   }
@@ -104,11 +103,11 @@ $input-border: #9b9b9b;
 }
 
 //Responsive Code for mobile
-.m-nav{
+.m-nav {
   cursor: pointer;
   width: 40px;
-  height:auto;
-  color:#ffffff;
+  height: auto;
+  color: #ffffff;
 }
 
 .mnav-overlay {
@@ -155,14 +154,18 @@ $input-border: #9b9b9b;
   top: 20px;
   right: 20px;
   font-size: 20px;
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
 }
 
 @media screen and (max-height: 450px) {
-  .mnav-overlay {overflow-y: auto;}
-  .mnav-overlay a {font-size: 20px}
+  .mnav-overlay {
+    overflow-y: auto;
+  }
+  .mnav-overlay a {
+    font-size: 20px
+  }
   .mnav-overlay .closebtn {
     font-size: 20px;
     font-family: $ff;
@@ -171,33 +174,35 @@ $input-border: #9b9b9b;
     text-decoration: none;
   }
 }
-@media(min-width:991px){
-.m-nav{
-  display: none;
+
+@media(min-width: 991px) {
+  .m-nav {
+    display: none;
+  }
 }
-}
-@media (max-width:991px){
-  .nav-area{
+
+@media (max-width: 991px) {
+  .nav-area {
     padding: 10px;
-    .logo{
-      a{
+    .logo {
+      a {
         margin-right: 5px;
-        img{
+        img {
           width: 80px;
           height: auto;
         }
       }
     }
-    .right-nav{
+    .right-nav {
       margin-left: auto;
-      .btn-submit{
+      .btn-submit {
         padding: 5px;
       }
-      img{
+      img {
         width: 16px;
-        height:auto;
+        height: auto;
       }
-      a{
+      a {
         font-size: 16px;
         &:not(:last-child) {
           margin-right: .6em;
@@ -205,23 +210,23 @@ $input-border: #9b9b9b;
       }
     }
   }
-  .center-nav{
+  .center-nav {
     display: none;
   }
 
 }
 
-@media (max-width:567px) {
-  .right-nav{
+@media (max-width: 567px) {
+  .right-nav {
     margin-left: auto;
-    .btn-submit{
+    .btn-submit {
       padding: 5px;
     }
-    img{
+    img {
       width: 16px;
-      height:auto;
+      height: auto;
     }
-    a{
+    a {
       font-size: 11px;
       &:not(:last-child) {
         margin-right: .8em;
@@ -230,7 +235,7 @@ $input-border: #9b9b9b;
   }
 }
 
-@media (max-width:1200px){
+@media (max-width: 1200px) {
 
   .center-nav {
     margin-right: auto;
@@ -251,11 +256,10 @@ $input-border: #9b9b9b;
     }
   }
 }
+
 //Responsive Code for mobile
 
 //End Main Navigation Area
-
-
 
 /* =================================
              Header Text Area
@@ -303,18 +307,18 @@ $input-border: #9b9b9b;
   }
 }
 
-@media (max-width:768px){
-    .header-text{
-      h2{
-        padding-bottom: 15px;
-      }
-      p:last-of-type{
-        display: none;
-      }
-      a{
-        padding: 10px 20px;
-      }
+@media (max-width: 768px) {
+  .header-text {
+    h2 {
+      padding-bottom: 15px;
     }
+    p:last-of-type {
+      display: none;
+    }
+    a {
+      padding: 10px 20px;
+    }
+  }
 }
 
 //End Header Text Area
@@ -349,7 +353,7 @@ $input-border: #9b9b9b;
       select {
 
         font-family: $ft;
-        font-size:20px;
+        font-size: 20px;
         display: inline-block;
         width: 100%;
         cursor: pointer;
@@ -366,7 +370,7 @@ $input-border: #9b9b9b;
         &::-ms-expand {
           display: none;
         }
-        &:hover,:focus{
+        &:hover, :focus {
           background: #ffffff;
           outline: 0;
         }
@@ -1158,13 +1162,13 @@ $input-border: #9b9b9b;
   }
 
   .lldiscount-code {
-      padding: 3.5em 1em;
-      min-height: 80px;
-      border-bottom: 1px solid #b5b5b5;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+    padding: 3.5em 1em;
+    min-height: 80px;
+    border-bottom: 1px solid #b5b5b5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 
     .llcoupon-text {
@@ -1410,6 +1414,132 @@ $input-border: #9b9b9b;
 //End For How It Works Page
 
 /* =================================
+              For FAQ (Page 6)
+   ================================= */
+.faq-area {
+  background: #f8f8f8;
+  padding-top: 8vh;
+  overflow: hidden;
+
+}
+
+.container-wh {
+  background: #ffffff;
+  margin-bottom: 100px;
+  overflow: hidden;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.faq-title {
+  margin-bottom: 10vh;
+  h2 {
+    color: #606060;
+    font-family: $ft;
+    letter-spacing: 2px;
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    //border-bottom:1px solid #2452a2;
+    //opacity: 0.3;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 10%;
+      display: inline-block;
+      height: 1em;
+      width: 80%;
+      border-bottom: 2px solid;
+      border-image: linear-gradient(to right, #CA49D9, #2452A2);
+      border-image-slice: 1;
+      opacity: 0.6;
+      margin-top: 15px;
+    }
+
+  }
+}
+
+.faq-main {
+  background: #ffffff;
+}
+
+//FAQ Accordion
+
+.accordion-container {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 50px 0;
+}
+
+.ac {
+  margin-top: 10px;
+  background-color: #fff;
+  font-family: $ff;
+}
+
+.ac > .ac-q {
+  font-family: $ff;
+  font-size: 22px;
+  font-weight: lighter;
+  color: #929292;
+  padding: 20px 10px 20px;
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #dddddd;
+  &:focus {
+    outline: none;
+  }
+}
+
+.ac > .ac-q::after {
+  font-family: FontAwesome;
+  font-weight: 300;
+  font-size: 14px;
+  content: "\f054";
+  text-align: center;
+  //width: 15px;
+  right: 10px;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+}
+
+.ac > .ac-a {
+  font-family: $ff;
+  color: #929292;
+  overflow: hidden;
+  -o-transition-property: all;
+  -o-transition-timing-function: ease;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
+  transition-property: all;
+  transition-timing-function: ease;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+.ac > .ac-a p {
+  font-family: $ff;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: lighter;
+  color: #929292;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.ac.active > .ac-q::after {
+  font-family: FontAwesome;
+  content: "\f078";
+}
+
+//End FAQ Accordion
+
+//END FAQ (Page 6)
+
+/* =================================
               For Login
    ================================= */
 
@@ -1482,7 +1612,7 @@ $input-border: #9b9b9b;
           position: relative;
           width: 20px;
           height: 20px;
-          margin-right:10px;
+          margin-right: 10px;
           bottom: 2px;
         }
       }
@@ -1505,8 +1635,6 @@ $input-border: #9b9b9b;
               For Sign up
    ================================= */
 
-
-
 .llsignup-area {
   .llsignup-form {
     background: #ffffff;
@@ -1526,7 +1654,7 @@ $input-border: #9b9b9b;
         }
       }
 
-      input[type="text"],input[type="email"] {
+      input[type="text"], input[type="email"] {
         border: 1px solid $input-border;
         padding: 15px 5px;
       }
@@ -1538,8 +1666,8 @@ $input-border: #9b9b9b;
       input[type="submit"] {
         background: #ca49d9;
         background: -moz-linear-gradient(left, #ca49d9 0%, #1771A8 100%);
-        background: -webkit-linear-gradient(left, #ca49d9 0%, #1771A8  100%);
-        background: linear-gradient(to right, #ca49d9 0%, #1771A8  100%);
+        background: -webkit-linear-gradient(left, #ca49d9 0%, #1771A8 100%);
+        background: linear-gradient(to right, #ca49d9 0%, #1771A8 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ca49d9', endColorstr='#1771A8 ', GradientType=1);
         color: #ffffff;
         padding: 12px 5px;
@@ -1561,8 +1689,8 @@ $input-border: #9b9b9b;
         padding: 10px 0 0 0;
         font-weight: 300;
       }
-      small{
-        color:#434242;
+      small {
+        color: #434242;
         opacity: 0.57;
         font-size: 16px;
         margin-top: 10px;
@@ -1571,7 +1699,6 @@ $input-border: #9b9b9b;
     }
   }
 }
-
 
 //End For Signup
 
@@ -1593,7 +1720,6 @@ $input-border: #9b9b9b;
 
 .ll-footer-about {
   position: relative;
-
 
   &:after {
     content: '';
@@ -1661,7 +1787,7 @@ $input-border: #9b9b9b;
 //Footer Newsletter
 
 .ll-subscription {
- max-width:300px;
+  max-width: 300px;
   display: block;
 }
 
@@ -1730,14 +1856,13 @@ $input-border: #9b9b9b;
   }
 }
 
-
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .ll-footer-about {
     position: relative;
 
     &:after {
       content: '';
-      border:0;
+      border: 0;
       position: absolute;
       right: 0;
       top: 20%;
@@ -1745,13 +1870,12 @@ $input-border: #9b9b9b;
       height: 0;
     }
 
-    p{
+    p {
       width: 100%;
     }
   }
 
 }
-
 
 //End Footer Social
 
@@ -1775,7 +1899,7 @@ $input-border: #9b9b9b;
 
   .ll-copyright {
     p {
-      margin:0;
+      margin: 0;
       color: #9b9b9b;
       font-family: $ff;
       font-size: 14px;
@@ -1786,12 +1910,12 @@ $input-border: #9b9b9b;
 }
 
 @media (max-width: 567px) {
-  .copyright-area{
+  .copyright-area {
     .ll-paymentlogo {
 
     }
-    .ll-copyright{
-      p{
+    .ll-copyright {
+      p {
         font-size: 12px;
       }
     }

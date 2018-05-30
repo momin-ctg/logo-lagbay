@@ -990,6 +990,107 @@
       margin-left: 45px; }
 
 /* =================================
+              For FAQ (Page 6)
+   ================================= */
+.faq-area {
+  background: #f8f8f8;
+  padding-top: 8vh;
+  overflow: hidden; }
+
+.container-wh {
+  background: #ffffff;
+  margin-bottom: 100px;
+  overflow: hidden;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+.faq-title {
+  margin-bottom: 10vh; }
+  .faq-title h2 {
+    color: #606060;
+    font-family: "TrebuchetMS", sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    display: inline-block;
+    position: relative; }
+    .faq-title h2::after {
+      content: '';
+      position: absolute;
+      left: 10%;
+      display: inline-block;
+      height: 1em;
+      width: 80%;
+      border-bottom: 2px solid;
+      border-image: linear-gradient(to right, #CA49D9, #2452A2);
+      border-image-slice: 1;
+      opacity: 0.6;
+      margin-top: 15px; }
+
+.faq-main {
+  background: #ffffff; }
+
+.accordion-container {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 50px 0; }
+
+.ac {
+  margin-top: 10px;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif; }
+
+.ac > .ac-q {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  color: #929292;
+  padding: 20px 10px 20px;
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #dddddd; }
+  .ac > .ac-q:focus {
+    outline: none; }
+
+.ac > .ac-q::after {
+  font-family: FontAwesome;
+  font-weight: 300;
+  font-size: 14px;
+  content: "\f054";
+  text-align: center;
+  right: 10px;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute; }
+
+.ac > .ac-a {
+  font-family: "Roboto", sans-serif;
+  color: #929292;
+  overflow: hidden;
+  -o-transition-property: all;
+  -o-transition-timing-function: ease;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease;
+  transition-property: all;
+  transition-timing-function: ease;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1); }
+
+.ac > .ac-a p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: lighter;
+  color: #929292;
+  margin-left: 20px;
+  padding: 10px; }
+
+.ac.active > .ac-q::after {
+  font-family: FontAwesome;
+  content: "\f078"; }
+
+/* =================================
               For Login
    ================================= */
 .lllogin-area .lllogin-form {
