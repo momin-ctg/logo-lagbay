@@ -703,8 +703,288 @@
       color: #848484; }
 
 /* =================================
-   for  Dashboard Submit Logo Area
+   For  Dashboard Submit Logo Area
    ================================= */
+.lld-submitlogoarea {
+  padding: 60px 0 40px 0; }
+
+.lld-submitlogotitle {
+  background: #ffffff;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; }
+  .lld-submitlogotitle h3 {
+    margin-left: 25px;
+    padding: 25px 0;
+    color: #7e7e7e;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    display: block; }
+
+.lld-uploadlogo h4 {
+  font-family: "Roboto", sans-serif;
+  color: #929292;
+  font-size: 24px;
+  font-weight: lighter; }
+.lld-uploadlogo small {
+  font-family: "Roboto", sans-serif;
+  color: #929292;
+  font-size: 14px;
+  font-weight: 300; }
+
+.lld-fileupload {
+  position: relative;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 1.5em; }
+  .lld-fileupload .file-upload__label {
+    display: block;
+    padding: 1em 2em;
+    color: #fff;
+    background: #6928AC;
+    width: 100%;
+    border-radius: 1px;
+    transition: background .3s;
+    font-weight: 300; }
+    .lld-fileupload .file-upload__label:hover {
+      cursor: pointer;
+      background: #501e83; }
+  .lld-fileupload .file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1px;
+    width: 0;
+    height: 100%;
+    opacity: 0; }
+
+.lld-uploadstatus {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .lld-uploadstatus .file-name, .lld-uploadstatus .file-status {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #929292;
+    font-weight: 300; }
+  .lld-uploadstatus .file-status span {
+    cursor: pointer; }
+    .lld-uploadstatus .file-status span img {
+      width: 18px;
+      height: 18px; }
+
+.lld-thumbnailarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .lld-thumbnailarea .lld-thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .lld-thumbnailarea .lld-thumbnail .lld-thumbnailimg img {
+      box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+      width: 260px;
+      max-width: 260px;
+      height: auto;
+      object-fit: cover; }
+    .lld-thumbnailarea .lld-thumbnail .lld-thumbuploadform {
+      align-self: center; }
+      .lld-thumbnailarea .lld-thumbnail .lld-thumbuploadform .thumb-upload {
+        position: relative;
+        display: block;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin-top: 1em;
+        align-self: center; }
+        .lld-thumbnailarea .lld-thumbnail .lld-thumbuploadform .thumb-upload .file-upload__label {
+          display: block;
+          color: #5e5e5e;
+          font-size: 18px;
+          margin: 0 auto;
+          border-radius: 1px;
+          transition: background .3s;
+          font-weight: 300;
+          text-decoration: underline; }
+          .lld-thumbnailarea .lld-thumbnail .lld-thumbuploadform .thumb-upload .file-upload__label:hover {
+            cursor: pointer; }
+        .lld-thumbnailarea .lld-thumbnail .lld-thumbuploadform .thumb-upload .file-upload__input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          font-size: 1px;
+          width: 0;
+          height: 100%;
+          opacity: 0; }
+        .lld-thumbnailarea .lld-thumbnail .lld-thumbuploadform .thumb-upload small {
+          color: #5e5e5e;
+          font-size: 14px;
+          font-weight: 300; }
+  .lld-thumbnailarea .lld-thumbcolors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 162px; }
+    .lld-thumbnailarea .lld-thumbcolors .lld-colorone {
+      cursor: pointer;
+      display: flex;
+      height: 35px;
+      width: 80px;
+      justify-content: space-between;
+      align-items: center; }
+      .lld-thumbnailarea .lld-thumbcolors .lld-colorone .color-property {
+        background: #CE2B2B;
+        height: 100%;
+        width: 60%; }
+      .lld-thumbnailarea .lld-thumbcolors .lld-colorone .color-arrow {
+        border-top: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 40%;
+        background: #ffffff; }
+        .lld-thumbnailarea .lld-thumbcolors .lld-colorone .color-arrow img {
+          margin-left: 8px;
+          width: 15px;
+          height: auto;
+          padding: 12px 0; }
+    .lld-thumbnailarea .lld-thumbcolors .lld-colortwo {
+      cursor: pointer;
+      display: flex;
+      height: 35px;
+      width: 80px;
+      justify-content: space-between;
+      align-items: center; }
+      .lld-thumbnailarea .lld-thumbcolors .lld-colortwo .color-property {
+        background: #791DAE;
+        height: 100%;
+        width: 60%; }
+      .lld-thumbnailarea .lld-thumbcolors .lld-colortwo .color-arrow {
+        border-top: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 40%;
+        background: #ffffff; }
+        .lld-thumbnailarea .lld-thumbcolors .lld-colortwo .color-arrow img {
+          margin-left: 8px;
+          width: 15px;
+          height: auto;
+          padding: 12px 0; }
+    .lld-thumbnailarea .lld-thumbcolors .lld-colorthree {
+      cursor: pointer;
+      display: flex;
+      height: 35px;
+      width: 80px;
+      justify-content: space-between;
+      align-items: center; }
+      .lld-thumbnailarea .lld-thumbcolors .lld-colorthree .color-property {
+        background: #2452A2;
+        height: 100%;
+        width: 60%; }
+      .lld-thumbnailarea .lld-thumbcolors .lld-colorthree .color-arrow {
+        border-top: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 40%;
+        background: #ffffff; }
+        .lld-thumbnailarea .lld-thumbcolors .lld-colorthree .color-arrow img {
+          margin-left: 8px;
+          width: 15px;
+          height: auto;
+          padding: 12px 0; }
+    .lld-thumbnailarea .lld-thumbcolors .lld-colorfour {
+      cursor: pointer;
+      display: flex;
+      height: 35px;
+      width: 80px;
+      justify-content: space-between;
+      align-items: center; }
+      .lld-thumbnailarea .lld-thumbcolors .lld-colorfour .color-property {
+        background: #4BB464;
+        height: 100%;
+        width: 60%; }
+      .lld-thumbnailarea .lld-thumbcolors .lld-colorfour .color-arrow {
+        border-top: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 40%;
+        background: #ffffff; }
+        .lld-thumbnailarea .lld-thumbcolors .lld-colorfour .color-arrow img {
+          margin-left: 8px;
+          width: 15px;
+          height: auto;
+          padding: 12px 0; }
+
+#lld-logouploadform form input[type="text"]:focus {
+  outline: none; }
+#lld-logouploadform form textarea {
+  font-family: "Roboto", sans-serif;
+  background: #efefef;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 20px; }
+#lld-logouploadform form input {
+  font-family: "Roboto", sans-serif;
+  color: #818181;
+  background: #efefef;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  margin-bottom: 20px; }
+#lld-logouploadform form label {
+  color: #929292;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: lighter; }
+
+.lld-uploadsavebtn {
+  margin-top: 20px; }
+  .lld-uploadsavebtn a {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #E3E6EE;
+    display: block;
+    color: #8C909C;
+    font-family: "Roboto", sans-serif;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 2px; }
+    .lld-uploadsavebtn a:hover {
+      background: #b3bcd1;
+      text-decoration: none;
+      color: #ffffff; }
+
+.lld-ulinsarea {
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .lld-ulinsarea h4 {
+    color: #929292;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #D5D5D5; }
+  .lld-ulinsarea .lld-insone, .lld-ulinsarea .lld-instwo, .lld-ulinsarea .lld-insthree, .lld-ulinsarea .lld-insfour {
+    margin-bottom: 34px; }
+    .lld-ulinsarea .lld-insone h5, .lld-ulinsarea .lld-instwo h5, .lld-ulinsarea .lld-insthree h5, .lld-ulinsarea .lld-insfour h5 {
+      font-family: "Roboto", sans-serif;
+      color: #4B4B4B;
+      font-size: 18px; }
+    .lld-ulinsarea .lld-insone p, .lld-ulinsarea .lld-instwo p, .lld-ulinsarea .lld-insthree p, .lld-ulinsarea .lld-insfour p {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8; }
+
 /* End Dashboard Submit Logo Area*/
 
 /*# sourceMappingURL=dashboard.css.map */

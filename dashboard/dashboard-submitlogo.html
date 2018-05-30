@@ -102,108 +102,155 @@
             </div>
 
             <div class="row">
-                <div class="col-md-8 col-sm-12">
-                    <div class="white-bg">
-                        <div class="row">
-                            <div class="col-md-6">
+                <div class="col-md-9 col-sm-12">
+                    <div class="bg-white">
+                        <div class="row pt-3">
+                            <div class="col-md-5 col-sm-12">
                                 <div class="lld-uploadlogo">
                                     <form action="">
                                         <h4>Upload Logo File Here</h4>
-                                        <small>(Must be in AI,EPS or SVG)</small>
+                                        <small>(Must be in AI, EPS or SVG)</small>
 
-                                        <div class="file-upload">
+                                        <div class="lld-fileupload">
                                             <label for="upload" class="file-upload__label">Choose File</label>
                                             <input id="upload" class="file-upload__input" type="file"
                                                    name="file-upload">
                                         </div>
 
                                         <div class="lld-uploadstatus">
-                                            <div class="file-name"></div>
-                                            <div class="file-status">70% <span>&times;</span></div>
+                                            <div class="file-name">codesign.zip</div>
+                                            <div class="file-status">70% <span><img src="../images/dashboard/x.svg"
+                                                                                    alt=""></span></div>
                                         </div>
 
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-7 col-sm-12">
                                 <div class="lld-thumbnailarea">
                                     <div class="lld-thumbnail">
                                         <div class="lld-thumbnailimg">
-                                            <img src="" alt="">
+                                            <img src="../images/dashboard/dl.jpg" alt="">
                                         </div>
-                                        <div class="lld-imguploadform">
-                                            <div class="file-upload">
-                                                <label for="lld-upload" class="file-upload__label">Css only file upload
-                                                    button</label>
+                                        <div class="lld-thumbuploadform">
+                                            <div class="thumb-upload">
+                                                <label for="lld-upload" class="file-upload__label">Upload Own
+                                                    Thumbnail</label>
                                                 <input id="lld-upload" class="file-upload__input" type="file"
                                                        name="file-upload">
+                                                <small>(JPEG or PNG 300x300px)</small>
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class="lld-thumbcolors"></div>
+                                    <div class="lld-thumbcolors">
+                                        <div class="lld-colorone">
+
+                                            <span class="color-property">
+
+                                            </span>
+                                            <span class="color-arrow">
+                                                <img src="../images/dashboard/d-arrow.svg" alt="logo-lagbey">
+                                            </span>
+
+                                        </div>
+                                        <div class="lld-colortwo">
+
+                                            <span class="color-property">
+
+                                            </span>
+                                            <span class="color-arrow">
+                                                <img src="../images/dashboard/d-arrow.svg" alt="logo-lagbey">
+                                            </span>
+
+                                        </div>
+                                        <div class="lld-colorthree">
+
+                                            <span class="color-property">
+
+                                            </span>
+                                            <span class="color-arrow">
+                                                <img src="../images/dashboard/d-arrow.svg" alt="logo-lagbey">
+                                            </span>
+
+                                        </div>
+                                        <div class="lld-colorfour">
+
+                                            <span class="color-property">
+
+                                            </span>
+                                            <span class="color-arrow">
+                                                <img src="../images/dashboard/d-arrow.svg" alt="logo-lagbey">
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="row">
+                        <div class="row mt-4">
                             <div class="col-md-12">
 
+                                <div id="lld-logouploadform" class="lld-logouploadform">
+                                    <form action="">
 
-                                <form action="">
+                                        <div class="row">
 
-                                    <div class="row">
+                                            <div class="col-md-5">
+                                                <label for="accountname">Select Category</label>
+                                                <input class="form-control" type="text" name="" id="accountname">
+                                            </div>
 
-                                        <div class="col-md-5">
-                                            <label for="accountname">Account Name</label>
-                                            <input class="form-control" type="text" name="" id="accountname">
+                                            <div class="col-md-7">
+                                                <label for="username">Logo Name</label>
+                                                <input class="form-control input" type="text" name="" id="username">
+                                            </div>
+
                                         </div>
 
-                                        <div class="col-md-7">
-                                            <label for="username">User Name</label>
-                                            <input class="form-control input" type="text" name="" id="username">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="textarea">Logo Description</label><br/>
+                                                <textarea name="" class="form-control" id="textarea" cols="20"
+                                                          rows="5"></textarea>
+                                            </div>
                                         </div>
 
-                                    </div>
 
+                                        <div class="row">
 
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <label for="textarea">Author Bio</label><br/>
-                                            <textarea name="" class="form-control" id="textarea" cols="20"
-                                                      rows="5"></textarea>
-                                        </div>
-                                    </div>
+                                            <div class="col-md-5">
+                                                <label for="email-address">Price</label>
+                                                <input class="form-control" type="text" name="" id="email-address">
+                                            </div>
 
+                                            <div class="col-md-7">
+                                                <label for="phone-number">Tags</label>
+                                                <input class="form-control" type="text" name="" id="phone-number">
+                                            </div>
 
-                                    <div class="row">
-
-                                        <div class="col-md-5">
-                                            <label for="email-address">Email Address</label>
-                                            <input class="form-control" type="text" name="" id="email-address">
                                         </div>
 
-                                        <div class="col-md-7">
-                                            <label for="phone-number">Phone Number</label>
-                                            <input class="form-control" type="text" name="" id="phone-number">
-                                        </div>
 
-                                    </div>
-
-
-                                </form>
-
+                                    </form>
+                                </div>
 
                             </div>
                         </div>
 
-
                     </div>
+
+                    <div class="lld-uploadsavebtn">
+                        <a href="">Submit For review</a>
+                    </div>
+
                 </div>
-
-
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-3  col-sm-12">
 
                     <div class="lld-ulinsarea">
                         <h4>Upload Instructions</h4>
@@ -232,9 +279,9 @@
                     </div>
 
                 </div>
-
-
             </div>
+
+
         </div>
     </div>
 

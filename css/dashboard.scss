@@ -897,7 +897,7 @@ $d-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     font-family: $ff;
     thead {
       tr {
-        th{
+        th {
           border: none;
           padding: 1em 0;
           font-family: $ff;
@@ -929,11 +929,396 @@ $d-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 
 //End Dashboard Withdraw Area
 
-
 /* =================================
-   for  Dashboard Submit Logo Area
+   For  Dashboard Submit Logo Area
    ================================= */
+.lld-submitlogoarea {
+  padding: 60px 0 40px 0;
+}
 
+.lld-submitlogotitle {
+  background: #ffffff;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  h3 {
+    margin-left: 25px;
+    padding: 25px 0;
+    color: #7e7e7e;
+    font-family: $ff;
+    font-size: 26px;
+    display: block;
+  }
+}
+
+.lld-uploadlogo {
+
+  h4 {
+    font-family: $ff;
+    color: #929292;
+    font-size: 24px;
+    font-weight: lighter;
+
+  }
+  small {
+    font-family: $ff;
+    color: #929292;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+.lld-fileupload {
+  position: relative;
+  display: block;
+  font-family: $ff;
+  text-align: center;
+  margin-top: 1.5em;
+
+  .file-upload__label {
+    display: block;
+    padding: 1em 2em;
+    color: #fff;
+    background: #6928AC;
+    width: 100%;
+    border-radius: 1px;
+    transition: background .3s;
+    font-weight: 300;
+
+    &:hover {
+      cursor: pointer;
+      background: darken(#6928ac, 10%);
+    }
+  }
+
+  .file-upload__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1px;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+  }
+
+}
+
+.lld-uploadstatus {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .file-name, .file-status {
+    font-family: $ff;
+    font-size: 14px;
+    color: #929292;
+    font-weight: 300;
+  }
+
+  .file-status {
+    span {
+      cursor: pointer;
+      img {
+        width: 18px;
+        height: 18px;
+      }
+
+    }
+
+  }
+}
+
+.lld-thumbnailarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .lld-thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .lld-thumbnailimg {
+      img {
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+        width: 260px;
+        max-width: 260px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .lld-thumbuploadform {
+      align-self: center;
+
+      .thumb-upload {
+        position: relative;
+        display: block;
+        font-family: $ff;
+        text-align: center;
+        margin-top: 1em;
+        align-self: center;
+
+        .file-upload__label {
+          display: block;
+          color: #5e5e5e;
+          font-size: 18px;
+          margin: 0 auto;
+          border-radius: 1px;
+          transition: background .3s;
+          font-weight: 300;
+          text-decoration: underline;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+        }
+
+        .file-upload__input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          font-size: 1px;
+          width: 0;
+          height: 100%;
+          opacity: 0;
+        }
+
+        small {
+          color: #5e5e5e;
+          font-size: 14px;
+          font-weight: 300;
+        }
+
+      }
+
+    }
+
+  }
+
+  .lld-thumbcolors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 162px;
+
+    .lld-colorone {
+      cursor: pointer;
+      display: flex;
+      height: 35px;
+      width: 80px;
+      justify-content: space-between;
+      align-items: center;
+      .color-property {
+        background: #CE2B2B;
+        height: 100%;
+        width: 60%;
+      }
+
+      .color-arrow {
+        border-top: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 40%;
+        background: #ffffff;
+        img {
+          margin-left: 8px;
+          width: 15px;
+          height: auto;
+          padding: 12px 0;
+
+        }
+      }
+
+    }
+    .lld-colortwo {
+      cursor: pointer;
+      display: flex;
+      height: 35px;
+      width: 80px;
+      justify-content: space-between;
+      align-items: center;
+      //background: red;
+      .color-property {
+        background: #791DAE;
+        height: 100%;
+        width: 60%;
+      }
+
+      .color-arrow {
+        border-top: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 40%;
+        background: #ffffff;
+        img {
+          margin-left: 8px;
+          width: 15px;
+          height: auto;
+          padding: 12px 0;
+
+        }
+      }
+
+    }
+    .lld-colorthree {
+      cursor: pointer;
+      display: flex;
+      height: 35px;
+      width: 80px;
+      justify-content: space-between;
+      align-items: center;
+      //background: red;
+      .color-property {
+        background: #2452A2;
+        height: 100%;
+        width: 60%;
+      }
+
+      .color-arrow {
+        border-top: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 40%;
+        background: #ffffff;
+        img {
+          margin-left: 8px;
+          width: 15px;
+          height: auto;
+          padding: 12px 0;
+
+        }
+      }
+
+    }
+    .lld-colorfour {
+      cursor: pointer;
+      display: flex;
+      height: 35px;
+      width: 80px;
+      justify-content: space-between;
+      align-items: center;
+      //background: red;
+      .color-property {
+        background: #4BB464;
+        height: 100%;
+        width: 60%;
+      }
+
+      .color-arrow {
+        border-top: 1px solid #DBDBDB;
+        border-right: 1px solid #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 40%;
+        background: #ffffff;
+        img {
+          margin-left: 8px;
+          width: 15px;
+          height: auto;
+          padding: 12px 0;
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+#lld-logouploadform {
+  form {
+
+    input[type="text"] {
+      &:focus {
+        outline: none;
+      }
+    }
+    textarea {
+      font-family: $ff;
+      background: #efefef;
+      border: none;
+      border-radius: 2px;
+      margin-bottom: 20px;
+    }
+    input {
+      font-family: $ff;
+      color: $gray-colors-light;
+      background: #efefef;
+      font-size: 16px;
+      letter-spacing: 1px;
+      border: none;
+      border-radius: 2px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    label {
+      color: #929292;
+      font-family: $ff;
+      font-size: 14px;
+      font-weight: lighter;
+    }
+
+  }
+}
+
+.lld-uploadsavebtn {
+  margin-top: 20px;
+
+  a {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #E3E6EE;
+    display: block;
+    color: #8C909C;
+    font-family: $ff;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    &:hover {
+      background: darken(#E3E6EE, 15%);
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+}
+
+.lld-ulinsarea {
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  h4 {
+    color: #929292;
+    font-family: $ff;
+    font-size: 24px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #D5D5D5;
+  }
+
+  .lld-insone, .lld-instwo, .lld-insthree, .lld-insfour {
+    margin-bottom: 34px;
+    h5 {
+      font-family: $ff;
+      color: #4B4B4B;
+      font-size: 18px;
+    }
+    p {
+      font-family: $ff;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+  }
+
+}
 
 /* End Dashboard Submit Logo Area*/
 
