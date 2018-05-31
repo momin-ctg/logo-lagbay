@@ -876,14 +876,13 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
       padding: 1em; }
       .llalllogos-area .logo-thumb .logo-caption .ll-category {
         color: #6e6e6e;
         font-family: "Roboto", sans-serif;
         font-size: 12px; }
       .llalllogos-area .logo-thumb .logo-caption .ll-price {
-        position: relative;
-        bottom: 2px;
         color: #2452a2;
         font-family: "Roboto", sans-serif;
         font-size: 16px;
@@ -894,9 +893,7 @@
           font-weight: 300;
           color: #6e6e6e;
           text-decoration: line-through;
-          display: inline-block;
-          position: relative;
-          bottom: 3px; }
+          display: inline-block; }
 
 /* =================================
      Logo Purchase Details (Page 4)

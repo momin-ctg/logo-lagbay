@@ -1203,6 +1203,7 @@ $input-border: #9b9b9b;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
       padding: 1em;
 
       .ll-category {
@@ -1211,8 +1212,6 @@ $input-border: #9b9b9b;
         font-size: 12px;
       }
       .ll-price {
-        position: relative;
-        bottom: 2px;
         span {
           font-size: 10px;
           margin-right: 5px;
@@ -1220,8 +1219,7 @@ $input-border: #9b9b9b;
           color: #6e6e6e;
           text-decoration: line-through;
           display: inline-block;
-          position: relative;
-          bottom: 3px;
+
         }
         color: #2452a2;
         font-family: $ff;
