@@ -6,10 +6,17 @@
       }
     </style>
     <linearGradient id="linear-gradient" x1="7.297" y1="4.898" x2="-18.154" y2="-8.781" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#8c42d5"/>
-      <stop offset="0.251" stop-color="#7447d6"/>
-      <stop offset="0.502" stop-color="#1259d9"/>
-      <stop offset="1" stop-color="#105adb"/>
+      <stop offset="0" stop-color="#8c42d5">
+        <animate attributeName="stop-color" values="gray;blue;red;red;black;yellow;red;purple;lightblue" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#2452a2" stop-opacity=".5">
+        <animate attributeName="stop-color" values="red;blue;red;purple;red;purple;blue;blue;red" dur="10s" repeatCount="indefinite" />
+        <animate attributeName="offset" values=".95;.80;.60;.40;.20;.20;0;.20;.40;.60;.80;.95" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <!--<stop offset="0" stop-color="#8c42d5"/>-->
+      <!--<stop offset="0.251" stop-color="#7447d6"/>-->
+      <!--<stop offset="0.502" stop-color="#1259d9"/>-->
+      <!--<stop offset="1" stop-color="#105adb"/>-->
     </linearGradient>
   </defs>
   <g id="LogoLagbe-06" transform="translate(-72.588 -74.33)">

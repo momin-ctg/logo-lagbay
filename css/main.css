@@ -20,7 +20,7 @@
 .nav-area {
   font-family: "Roboto", sans-serif;
   display: flex;
-  padding: 15px;
+  height: 60px;
   position: relative;
   z-index: 1030; }
   .nav-area .logo a img {
@@ -31,13 +31,19 @@
   margin-right: auto;
   margin-left: auto; }
   .center-nav a {
+    transition: 0.4s;
     color: #ffffff;
     text-decoration: none;
+    padding: 16px 10px;
     font-size: 16px;
     font-family: "Roboto", sans-serif; }
     .center-nav a:hover {
+      background-color: #ffffff;
       text-decoration: none;
-      color: #ffffff; }
+      color: #929292;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
   .center-nav a:not(:last-child) {
     margin-right: 5em; }
 
@@ -83,15 +89,21 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(135deg, #0c1476, #680fac 60%);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0.9;
   overflow-y: hidden;
   transition: 0.5s; }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px; }
+.mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%; }
+  .mobile-nav a img {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    width: 120px;
+    height: auto; }
 
 .mnav-overlay a {
   font-family: "Roboto", sans-serif;
@@ -108,8 +120,8 @@
 
 .mnav-overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: .8em;
+  right: .8em;
   font-size: 20px; }
   .mnav-overlay .closebtn:hover {
     text-decoration: none; }
@@ -132,16 +144,16 @@
     display: none; } }
 @media (max-width: 991px) {
   .nav-area {
-    padding: 10px; }
+    padding: 15px; }
     .nav-area .logo a {
       margin-right: 5px; }
       .nav-area .logo a img {
-        width: 80px;
+        width: 100px;
         height: auto; }
     .nav-area .right-nav {
       margin-left: auto; }
       .nav-area .right-nav .btn-submit {
-        padding: 5px; }
+        padding: 8px; }
       .nav-area .right-nav img {
         width: 16px;
         height: auto; }
@@ -227,7 +239,8 @@
    ================================= */
 .logothumbnail-area {
   background: #eff1f5;
-  padding: 100px 0; }
+  padding: 100px 0;
+  /* Bounce To Bottom */ }
   .logothumbnail-area .logo-displayarea {
     margin-top: 20px; }
   .logothumbnail-area .ll-button-text {
@@ -316,8 +329,48 @@
     font-size: 22px;
     letter-spacing: 2px;
     padding: 1.2em; }
-    .logothumbnail-area .viewall-logo a:hover {
-      background: #c3cadb; }
+  .logothumbnail-area .hvr-bounce-to-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  .logothumbnail-area .hvr-bounce-to-bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0c1476;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #0c1476, #680fac 60%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .logothumbnail-area .hvr-bounce-to-bottom:hover, .logothumbnail-area .hvr-bounce-to-bottom:focus, .logothumbnail-area .hvr-bounce-to-bottom:active {
+    color: white; }
+  .logothumbnail-area .hvr-bounce-to-bottom:hover:before, .logothumbnail-area .hvr-bounce-to-bottom:focus:before, .logothumbnail-area .hvr-bounce-to-bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
 
 /* =====================================
      For Buy logos and Sell Logos Area
@@ -346,25 +399,69 @@
     color: #707070;
     font-weight: 300;
     line-height: 2em; }
-  .buysell-logosarea .ll-buylogos a {
-    max-width: 250px;
-    margin: 50px auto;
-    display: block;
-    background: #CA49D9;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 98%);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 20px 0;
-    text-decoration: none; }
-    .buysell-logosarea .ll-buylogos a:hover {
+  .buysell-logosarea .ll-buylogos .buysell-viewall {
+    /* Bounce To Right */ }
+    .buysell-logosarea .ll-buylogos .buysell-viewall a {
+      max-width: 250px;
+      margin: 50px auto;
+      display: block;
+      background: #CA49D9;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 98%);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 1px;
+      padding: 20px 0;
       text-decoration: none; }
+      .buysell-logosarea .ll-buylogos .buysell-viewall a:hover {
+        text-decoration: none; }
+    .buysell-logosarea .ll-buylogos .buysell-viewall .hvr-bounce-to-right {
+      display: block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+    .buysell-logosarea .ll-buylogos .buysell-viewall .hvr-bounce-to-right:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #0c1476;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(135deg, #0c1476, #680fac 60%);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+    .buysell-logosarea .ll-buylogos .buysell-viewall .hvr-bounce-to-right:hover, .buysell-logosarea .ll-buylogos .buysell-viewall .hvr-bounce-to-right:focus, .buysell-logosarea .ll-buylogos .buysell-viewall .hvr-bounce-to-right:active {
+      color: white; }
+    .buysell-logosarea .ll-buylogos .buysell-viewall .hvr-bounce-to-right:hover:before, .buysell-logosarea .ll-buylogos .buysell-viewall .hvr-bounce-to-right:focus:before, .buysell-logosarea .ll-buylogos .buysell-viewall .hvr-bounce-to-right:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
   .buysell-logosarea .ll-buylogos .buy-logoimage {
     padding-bottom: 100px; }
     .buysell-logosarea .ll-buylogos .buy-logoimage img {
@@ -383,25 +480,68 @@
     color: #707070;
     font-weight: 300;
     line-height: 2em; }
-  .buysell-logosarea .ll-selllogos a {
-    max-width: 250px;
-    margin: 50px auto;
-    display: block;
-    background: #CA49D9;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 98%);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: #ffffff;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 20px 0;
-    text-decoration: none; }
-    .buysell-logosarea .ll-selllogos a:hover {
+  .buysell-logosarea .ll-selllogos .buysell-bam {
+    /* Bounce To Left */ }
+    .buysell-logosarea .ll-selllogos .buysell-bam a {
+      max-width: 250px;
+      margin: 50px auto;
+      display: block;
+      background: #CA49D9;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 98%);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(135deg, #ca49d9, #8C42D5 100%, #2452a2 100%);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      letter-spacing: 1px;
+      padding: 20px 0;
       text-decoration: none; }
+      .buysell-logosarea .ll-selllogos .buysell-bam a:hover {
+        text-decoration: none; }
+    .buysell-logosarea .ll-selllogos .buysell-bam .hvr-bounce-to-left {
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+    .buysell-logosarea .ll-selllogos .buysell-bam .hvr-bounce-to-left:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #0c1476;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(135deg, #0c1476, #680fac 60%);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(135deg, #0c1476, #680fac 60%);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+    .buysell-logosarea .ll-selllogos .buysell-bam .hvr-bounce-to-left:hover, .buysell-logosarea .ll-selllogos .buysell-bam .hvr-bounce-to-left:focus, .buysell-logosarea .ll-selllogos .buysell-bam .hvr-bounce-to-left:active {
+      color: white; }
+    .buysell-logosarea .ll-selllogos .buysell-bam .hvr-bounce-to-left:hover:before, .buysell-logosarea .ll-selllogos .buysell-bam .hvr-bounce-to-left:focus:before, .buysell-logosarea .ll-selllogos .buysell-bam .hvr-bounce-to-left:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
   .buysell-logosarea .ll-selllogos .sell-logoimage {
     padding-bottom: 90px; }
     .buysell-logosarea .ll-selllogos .sell-logoimage img {
@@ -1255,21 +1395,42 @@
     width: 1px;
     height: 80%; }
   .ll-footer-ourcompany a, .ll-footer-faq a {
+    position: relative;
     display: block;
-    min-width: 30%;
-    max-width: 50%;
     color: #8b8b8b;
     font-family: "Roboto", sans-serif;
     padding: 2px;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 2px; }
+    .ll-footer-ourcompany a::before, .ll-footer-ourcompany a::after, .ll-footer-faq a::before, .ll-footer-faq a::after {
+      display: inline-block;
+      opacity: 0;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+      -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+      transition: transform 0.3s, opacity 0.2s; }
+    .ll-footer-ourcompany a::before, .ll-footer-faq a::before {
+      margin-right: 10px;
+      content: '[';
+      -webkit-transform: translateX(20px);
+      -moz-transform: translateX(20px);
+      transform: translateX(20px); }
+    .ll-footer-ourcompany a::after, .ll-footer-faq a::after {
+      margin-left: 10px;
+      content: ']';
+      -webkit-transform: translateX(-20px);
+      -moz-transform: translateX(-20px);
+      transform: translateX(-20px); }
+    .ll-footer-ourcompany a:hover::before, .ll-footer-ourcompany a:hover::after, .ll-footer-ourcompany a:focus::before, .ll-footer-ourcompany a:focus::after, .ll-footer-faq a:hover::before, .ll-footer-faq a:hover::after, .ll-footer-faq a:focus::before, .ll-footer-faq a:focus::after {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+      -moz-transform: translateX(0px);
+      transform: translateX(0px); }
     .ll-footer-ourcompany a:hover, .ll-footer-faq a:hover {
-      background: #8b8b8b;
-      color: #404044;
-      text-decoration: none; }
+      text-decoration: none;
+      color: #ffffff; }
 
 .ll-footer-newsletter p {
   font-family: "Roboto", sans-serif;
@@ -1298,7 +1459,7 @@
   background: linear-gradient(135deg, #ca4989, #df63c0 60%);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /*end gradient*/
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;

@@ -15,7 +15,7 @@
 <body>
 
 <!--lamp and lava Animation by jquery-->
-<canvas id="lamp-anim" class="lamp-anim"></canvas>
+<!--<canvas id="lamp-anim" class="lamp-anim"></canvas>-->
 <!--End lamp and lava Animation by jquery-->
 
 <!-- ===================================
@@ -65,7 +65,8 @@
 
     <div id="myNav" class="mnav-overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
+        <div class="mobile-nav">
+            <a href=""><img src="images/logo.svg" alt="logolagbey_logo"></a>
             <a href="#">Logos</a>
             <a href="#">How It Works</a>
             <a href="#">About</a>
@@ -77,15 +78,7 @@
 </div>
 
 <!--End Main Navigation Area-->
-<script>
-    function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-    }
 
-    function closeNav() {
-        document.getElementById("myNav").style.height = "0";
-    }
-</script>
 
 
 <!-- ===================================
@@ -96,7 +89,7 @@
     <div class="container">
 
         <div class="ll-button-text text-center">
-            <h2>Check thousand of logo ideas</h2>
+            <h2>Check thousands of logo ideas</h2>
 
             <!--Homepage Custom Select-->
             <div class="select">
@@ -201,7 +194,7 @@
 
         <!--Start View All logo link-->
         <div class="viewall-logo text-center">
-            <a href="">VIEW ALL</a>
+            <a class="hvr-bounce-to-bottom" href="">VIEW ALL</a>
         </div>
         <!--End All View All logo link-->
     </div>
@@ -226,7 +219,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ut?</p>
                     <p>Lorem ipsum dolor sit amet, consectetur.</p>
 
-                    <a href=""> View All</a>
+                    <div class="buysell-viewall">
+                        <a class="hvr-bounce-to-right" href=""> View All</a>
+                    </div>
 
                 </div>
             </div>
@@ -239,7 +234,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ut?</p>
                     <p>Lorem ipsum dolor sit amet, consectetur.</p>
 
-                    <a href="">Become a member</a>
+                    <div class="buysell-bam">
+                        <a class="hvr-bounce-to-left" href="">Become a member</a>
+                    </div>
+
                 </div>
             </div>
         </div>
