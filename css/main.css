@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =================================
        Importing All font family
    ================================= */
@@ -736,7 +737,14 @@
     padding-bottom: 15px;
     margin-bottom: 20px; }
   .llalllogos-area .llcategory-text {
-    border-bottom: 1px solid #b8b8b8; }
+    border-bottom: 1px solid #b8b8b8;
+    /* Base for label styling */
+    /* checkbox aspect */
+    /* checked mark aspect */
+    /* checked mark aspect changes */
+    /* disabled checkbox */
+    /* accessibility */
+    /* hover style just for information */ }
     .llalllogos-area .llcategory-text p {
       font-family: "Roboto", sans-serif;
       color: #636363;
@@ -750,13 +758,62 @@
         padding-left: 10px; }
         .llalllogos-area .llcategory-text p label span {
           font-weight: 300; }
+    .llalllogos-area .llcategory-text [type="checkbox"]:not(:checked),
+    .llalllogos-area .llcategory-text [type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px; }
+    .llalllogos-area .llcategory-text [type="checkbox"]:not(:checked) + label,
+    .llalllogos-area .llcategory-text [type="checkbox"]:checked + label {
+      position: relative;
+      padding-left: 1.95em;
+      cursor: pointer; }
+    .llalllogos-area .llcategory-text [type="checkbox"]:not(:checked) + label:before,
+    .llalllogos-area .llcategory-text [type="checkbox"]:checked + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1.25em;
+      height: 1.25em;
+      border: 2px solid #ccc;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); }
+    .llalllogos-area .llcategory-text [type="checkbox"]:not(:checked) + label:after,
+    .llalllogos-area .llcategory-text [type="checkbox"]:checked + label:after {
+      content: '✔';
+      position: absolute;
+      top: .375em;
+      left: .275em;
+      font-size: 1em;
+      line-height: 0.6;
+      color: #09ad7e;
+      transition: all .2s;
+      font-family: Helvetica, Arial, sans-serif; }
+    .llalllogos-area .llcategory-text [type="checkbox"]:not(:checked) + label:after {
+      opacity: 0;
+      transform: scale(0); }
+    .llalllogos-area .llcategory-text [type="checkbox"]:checked + label:after {
+      opacity: 1;
+      transform: scale(1); }
+    .llalllogos-area .llcategory-text [type="checkbox"]:disabled:not(:checked) + label:before,
+    .llalllogos-area .llcategory-text [type="checkbox"]:disabled:checked + label:before {
+      box-shadow: none;
+      border-color: #bbb;
+      background-color: #ddd; }
+    .llalllogos-area .llcategory-text [type="checkbox"]:disabled:checked + label:after {
+      color: #999; }
+    .llalllogos-area .llcategory-text [type="checkbox"]:disabled + label {
+      color: #aaa; }
   .llalllogos-area .llcategory-color {
     margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #b8b8b8; }
     .llalllogos-area .llcategory-color h3 {
       color: #636363;
       font-family: "Roboto", sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       font-size: 28px;
       margin-bottom: 20px; }
     .llalllogos-area .llcategory-color .llcategory-colorfilter span {
@@ -804,6 +861,122 @@
       background: #CE2B2B; }
     .llalllogos-area .llcategory-color .llcategory-colorfilter .cf20 {
       background: #3D6CBF; }
+  .llalllogos-area #llprice-slider h3 {
+    color: #636363;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px; }
+  .llalllogos-area #llprice-slider input {
+    box-shadow: unset;
+    outline: 0; }
+    .llalllogos-area #llprice-slider input:focus {
+      outline: 0; }
+  .llalllogos-area #llprice-slider .llrange-field {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .llalllogos-area #llprice-slider .range-slider {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    height: 4.5em; }
+  .llalllogos-area #llprice-slider input[type="range"] {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .llalllogos-area #llprice-slider input[type="number"] {
+    border: 1px solid #ddd;
+    font-family: "Roboto", sans-serif;
+    color: #818181;
+    text-align: center;
+    font-size: 16px;
+    background: #ffffff;
+    -moz-appearance: textfield;
+    width: 45%;
+    padding: 5px; }
+  .llalllogos-area #llprice-slider input[type="number"]::-webkit-outer-spin-button,
+  .llalllogos-area #llprice-slider input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
+  .llalllogos-area #llprice-slider input[type="number"]:invalid,
+  .llalllogos-area #llprice-slider input[type="number"]:out-of-range {
+    border: 2px solid #ff6347; }
+  .llalllogos-area #llprice-slider input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%; }
+  .llalllogos-area #llprice-slider input[type="range"]:focus {
+    outline: none; }
+  .llalllogos-area #llprice-slider input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #2452a2; }
+  .llalllogos-area #llprice-slider input[type="range"]:focus::-ms-fill-lower {
+    background: #2452a2; }
+  .llalllogos-area #llprice-slider input[type="range"]:focus::-ms-fill-upper {
+    background: #2452a2; }
+  .llalllogos-area #llprice-slider input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #2452a2;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0; }
+  .llalllogos-area #llprice-slider input[type="range"]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    /*   border: 1px solid #2497e3; */
+    height: 18px;
+    width: 6px;
+    /*   border-radius: 25px; */
+    background: #2452a2;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px; }
+  .llalllogos-area #llprice-slider input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #2452a2;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0; }
+  .llalllogos-area #llprice-slider input[type="range"]::-moz-range-thumb {
+    z-index: 2;
+    position: relative;
+    /*   border: 1px solid #2497e3; */
+    height: 18px;
+    width: 3px;
+    border: 0;
+    border-radius: 0;
+    /* border-radius: 25px; */
+    background: #2452a2;
+    cursor: pointer; }
+  .llalllogos-area #llprice-slider input[type="range"]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent; }
+  .llalllogos-area #llprice-slider input[type="range"]::-ms-fill-lower,
+  .llalllogos-area #llprice-slider input[type="range"]::-ms-fill-upper {
+    background: #2452a2;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0; }
+  .llalllogos-area #llprice-slider input[type="range"]::-ms-thumb {
+    z-index: 2;
+    position: relative;
+    height: 18px;
+    width: 6px;
+    /*   border-radius: 25px; */
+    background: #2452a2;
+    cursor: pointer; }
   .llalllogos-area .llsell-trending {
     border-bottom: 1px solid #b8b8b8;
     border-top: 1px solid #b8b8b8; }
@@ -831,15 +1004,15 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 20px;
-        width: 20px;
+        height: 15px;
+        width: 15px;
         background: #e6e6e6;
         border-radius: 50%; }
     .llalllogos-area .llsell-trending .control:hover input ~ .control__indicator,
     .llalllogos-area .llsell-trending .control input:focus ~ .control__indicator {
       background: #ccc; }
     .llalllogos-area .llsell-trending .control input:checked ~ .control__indicator {
-      background: #707070; }
+      background: #ffffff; }
     .llalllogos-area .llsell-trending .control input:disabled ~ .control__indicator {
       background: #e6e6e6;
       opacity: 0.6;
@@ -861,12 +1034,12 @@
     .llalllogos-area .llsell-trending .control--checkbox input:disabled ~ .control__indicator:after {
       border-color: #7b7b7b; }
     .llalllogos-area .llsell-trending .control--radio .control__indicator:after {
-      left: 7px;
-      top: 7px;
-      height: 6px;
-      width: 6px;
+      left: 3px;
+      top: 3px;
+      height: 10px;
+      width: 10px;
       border-radius: 50%;
-      background: #fff; }
+      background: #707070; }
   .llalllogos-area .logo-thumb {
     background: #ffffff;
     cursor: pointer;
