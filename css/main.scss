@@ -1094,6 +1094,12 @@ $input-border: #9b9b9b;
 
   }
 
+  @media (max-width: 768px) {
+    .llcategory-text{
+      columns: 2 auto;
+    }
+  }
+
   .llcategory-color {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1218,7 +1224,7 @@ $input-border: #9b9b9b;
 
     }
     input[type="number"] {
-      border: 1px solid #ddd;
+      border: 1px solid $blue-colors;
       font-family: $ff;
       color: $gray-colors-light;
       text-align: center;

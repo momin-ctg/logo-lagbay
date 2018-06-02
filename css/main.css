@@ -805,6 +805,9 @@
       color: #999; }
     .llalllogos-area .llcategory-text [type="checkbox"]:disabled + label {
       color: #aaa; }
+  @media (max-width: 768px) {
+    .llalllogos-area .llcategory-text {
+      columns: 2 auto; } }
   .llalllogos-area .llcategory-color {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -888,7 +891,7 @@
     left: 0;
     bottom: 0; }
   .llalllogos-area #llprice-slider input[type="number"] {
-    border: 1px solid #ddd;
+    border: 1px solid #2452a2;
     font-family: "Roboto", sans-serif;
     color: #818181;
     text-align: center;
